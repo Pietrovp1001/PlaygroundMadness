@@ -45,6 +45,7 @@ public class LevelGeneration : MonoBehaviour {
 			//finalize position
 			rooms[(int) checkPos.x + gridSizeX, (int) checkPos.y + gridSizeY] = new Room(checkPos, 0);
 			takenPositions.Insert(0,checkPos);
+			Debug.Log(rooms.Length);
 		}	
 	}
 	Vector2 NewPosition(){
