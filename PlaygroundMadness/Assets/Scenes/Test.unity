@@ -604,13 +604,49 @@ MonoBehaviour:
       m_Calls: []
   OnPointerDownEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114444473225277433}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: SecondaryShootButtonDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDragEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114444473225277433}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: SecondaryShootButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerUpEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114444473225277433}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: SecondaryShootButtonUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   RotatingIndicator: {fileID: 0}
   RotatingIndicatorThreshold: 0.1
   PressedOpacity: 0.5
@@ -20766,7 +20802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5439453847948286775
 GameObject:
   m_ObjectHideFlags: 0
