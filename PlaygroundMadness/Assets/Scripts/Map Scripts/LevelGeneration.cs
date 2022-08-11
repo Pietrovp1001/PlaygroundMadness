@@ -132,8 +132,8 @@ public class LevelGeneration : MonoBehaviour {
 				continue; //skip where there is no room
 			}
 			Vector2 drawPos = room.gridPos;
-			drawPos.x *= 16;//aspect ratio of map sprite
-			drawPos.y *= 8;
+			drawPos.x *= 128;//aspect ratio of map sprite
+			drawPos.y *= 64;
 			//create map obj and assign its variables
 			MapGameObjectSelector mapper = Object.Instantiate(roomWhiteObj, drawPos, Quaternion.identity).GetComponent<MapGameObjectSelector>();
 			mapper.type = room.type;
