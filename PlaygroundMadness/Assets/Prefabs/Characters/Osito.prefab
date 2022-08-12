@@ -1417,8 +1417,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8317060734418500836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.027097419, y: 0.13837455, z: 0}
-  m_LocalScale: {x: 0.22210997, y: 0.22210997, z: 2.2210996}
+  m_LocalPosition: {x: 0.009, y: 0.158, z: 0}
+  m_LocalScale: {x: 2.4169452, y: 2.4169452, z: 24.169449}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8315384310259050406}
@@ -6174,7 +6174,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f01921abf97fda4e92078a32ba7c689, type: 2}
+  - {fileID: 2100000, guid: 299836efb97849f478b1861344a4daa5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16398,7 +16398,7 @@ MonoBehaviour:
   DashMode: 1
   DashSpace: 1
   DashDirection: {x: 8.23, y: 0, z: 0}
-  DashDistance: 6
+  DashDistance: 15
   DashDuration: 0.2
   DashCurve:
     serializedVersion: 2
@@ -16687,7 +16687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8317612777914509886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.013548672, y: 0.06952045, z: 0}
+  m_LocalPosition: {x: -0.06, y: 0.1, z: 0}
   m_LocalScale: {x: 0.22210997, y: 0.22210997, z: 2.2210996}
   m_ConstrainProportionsScale: 0
   m_Children: []
