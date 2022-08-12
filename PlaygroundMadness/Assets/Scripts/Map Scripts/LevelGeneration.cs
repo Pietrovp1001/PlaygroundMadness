@@ -6,7 +6,8 @@ public class LevelGeneration : MonoBehaviour {
 	Vector2 worldSize = new Vector2(4,4);
 	Room[,] rooms;
 	List<Vector2> takenPositions = new List<Vector2>();
-	int gridSizeX, gridSizeY, numberOfRooms = 20;
+	int gridSizeX, gridSizeY;
+	public int numberOfRooms = 11;
 	public GameObject roomWhiteObj;
 	void Start () {
 		if (numberOfRooms >= (worldSize.x * 2) * (worldSize.y * 2)){ // make sure we dont try to make more rooms than can fit in our grid
@@ -45,7 +46,7 @@ public class LevelGeneration : MonoBehaviour {
 			//finalize position
 			rooms[(int) checkPos.x + gridSizeX, (int) checkPos.y + gridSizeY] = new Room(checkPos, 0);
 			takenPositions.Insert(0,checkPos);
-			Debug.Log(rooms.Length);
+			
 		}	
 	}
 	Vector2 NewPosition(){
