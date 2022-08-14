@@ -7,9 +7,9 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
-    public List<GameObject>  enemiesToSpawn = new List<GameObject>();
+    public List<GameObject> enemiesToSpawn = new List<GameObject>();
     public List<GameObject> spawnToObject = new List<GameObject>();
-    public ParticleSystem spawnEffect;
+    public List<ParticleSystem> spawnEffects = new List<ParticleSystem>();
 
     public float currentTimeToSpawn;
     private float timeToSpawn;
@@ -44,12 +44,12 @@ public class Spawner : MonoBehaviour
 
     public void SpawnObject()
     {
-        spawnEffect.Play();
         int indexEnemy = isRandom ? Random.Range(0, enemiesToSpawn.Count) : 0;
-        int indexSpawn = isRandom ? Random.Range(0, spawnToObject.Count) : 0;
-        if (enemiesToSpawn.Count > 0)
-        {
-            Instantiate(enemiesToSpawn[indexEnemy], spawnToObject[indexSpawn].transform.position, Quaternion.identity);
+        for (int i = 0; i < spawnToObject.Count; i++) {
+            if (enemiesToSpawn.Count > 0) {
+                Instantiate(enemiesToSpawn[indexEnemy], spawnToObject[i].transform.position, Quaternion.identity);
+                spawnEffects[i].Play();
+            }
         }
     }
 }
