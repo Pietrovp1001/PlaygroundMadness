@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3664284513818099761}
   - component: {fileID: 4728301609209763506}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: ColliderSideH (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1647757739669584705}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: SpawnRightUp
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2693131692808121639}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7386259857134198973}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: SpawnLeftUp
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -167,7 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3660602124721437098}
   - component: {fileID: 8622128297951728223}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: ColliderSideH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4004306113612606271}
   - component: {fileID: 7820925259777848719}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: ColliderUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811658925984585504}
   - component: {fileID: 3567962767129733093}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: ColliderSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7108062438833311739}
   - component: {fileID: 7209142471561298385}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: roomMapWhiteRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 7265938727959731950}
   - component: {fileID: 8206345619463330035}
   - component: {fileID: 7694544890413960214}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2153331517960209726}
   - component: {fileID: 5131519724000383638}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: ColliderDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6178449246290020575}
   - component: {fileID: 609858624620649051}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -671,20 +671,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6967646642812978573, guid: 074a1b3c931bcbb49b220c966c475fb3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6967944758522981739, guid: 074a1b3c931bcbb49b220c966c475fb3,
         type: 3}
       propertyPath: m_Name
       value: DashParticles (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967944758522981739, guid: 074a1b3c931bcbb49b220c966c475fb3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074a1b3c931bcbb49b220c966c475fb3, type: 3}
@@ -762,20 +752,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6967646642812978573, guid: 074a1b3c931bcbb49b220c966c475fb3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6967944758522981739, guid: 074a1b3c931bcbb49b220c966c475fb3,
         type: 3}
       propertyPath: m_Name
       value: DashParticles
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967944758522981739, guid: 074a1b3c931bcbb49b220c966c475fb3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074a1b3c931bcbb49b220c966c475fb3, type: 3}
