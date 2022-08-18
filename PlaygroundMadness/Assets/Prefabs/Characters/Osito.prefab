@@ -16398,7 +16398,7 @@ MonoBehaviour:
   DashMode: 1
   DashSpace: 1
   DashDirection: {x: 8.23, y: 0, z: 0}
-  DashDistance: 15
+  DashDistance: 5
   DashDuration: 0.2
   DashCurve:
     serializedVersion: 2
@@ -16452,7 +16452,7 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
-  BlockingMovementStates: 
+  BlockingMovementStates: 07000000
   BlockingConditionStates: 
   InitialWeapon: {fileID: 114317679573123918, guid: c98ccd7c70bb3374e929cfa720ec4296,
     type: 3}
@@ -16609,7 +16609,7 @@ MonoBehaviour:
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4047608218178228304}
   FeedbackIsProportionalToDamage: 0
-  PreventTakeSelfDamage: 0
+  PreventTakeSelfDamage: 1
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1

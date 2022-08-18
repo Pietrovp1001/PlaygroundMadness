@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 1844942877436214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.054268, y: -42.005257, z: -100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4928610705860810}
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 15
+  Radius: 128
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -703,13 +703,13 @@ MonoBehaviour:
   CycleOption: 1
   LoopInitialMovementDirection: 0
   PathElements:
-  - PathElementPosition: {x: 0, y: 0, z: 0}
+  - PathElementPosition: {x: -130.3277, y: -128.67426, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 6.8989716, y: 0.059303284, z: 0}
+  - PathElementPosition: {x: 124.091606, y: -130.26187, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 7.2152557, y: 5.119869, z: 0}
+  - PathElementPosition: {x: 136.32816, y: 141.09544, z: 0}
     Delay: 0
-  - PathElementPosition: {x: -0.07907486, y: 5.317547, z: 0}
+  - PathElementPosition: {x: -129.38866, y: 141.55975, z: 0}
     Delay: 0
   ReferenceMMPath: {fileID: 0}
   AbsoluteReferencePath: 0
