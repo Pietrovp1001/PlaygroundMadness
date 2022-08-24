@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 8234632181476150088}
   m_Layer: 0
   m_Name: trigger
-  m_TagString: Untagged
+  m_TagString: Trig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7761a568e49f44dbf8fb1a91ad846c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Activator: {fileID: 0}
   Spawner: {fileID: 4643274365779258247}
 --- !u!1001 &6431658177981613177
 PrefabInstance:
