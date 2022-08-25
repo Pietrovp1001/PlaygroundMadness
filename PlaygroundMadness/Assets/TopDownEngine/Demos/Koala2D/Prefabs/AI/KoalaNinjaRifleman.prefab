@@ -5316,6 +5316,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 0}
   States:
+  - StateName: Deciding
+    Actions:
+      array:
+      - {fileID: 467072190}
+    Transitions:
+      array:
+      - Decision: {fileID: 2438640544995507925}
+        TrueState: Attacking
+        FalseState: 
+  - StateName: Attacking
+    Actions:
+      array:
+      - {fileID: 2437789940715566383}
+      - {fileID: 467072190}
+    Transitions:
+      array:
+      - Decision: {fileID: 2438640544995507925}
+        TrueState: 
+        FalseState: Deciding
   - StateName: Moving
     Actions:
       array:
@@ -5326,24 +5345,6 @@ MonoBehaviour:
       - Decision: {fileID: 2438640544995507925}
         TrueState: Deciding
         FalseState: 
-  - StateName: Deciding
-    Actions:
-      array:
-      - {fileID: 2437835760440974471}
-    Transitions:
-      array:
-      - Decision: {fileID: 2438468500197026521}
-        TrueState: Attacking
-        FalseState: 
-  - StateName: Attacking
-    Actions:
-      array:
-      - {fileID: 2437789940715566383}
-    Transitions:
-      array:
-      - Decision: {fileID: 2439401147963574603}
-        TrueState: 
-        FalseState: Moving
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -5368,7 +5369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 128
+  Radius: 40
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2

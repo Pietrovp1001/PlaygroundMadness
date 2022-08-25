@@ -703,13 +703,13 @@ MonoBehaviour:
   CycleOption: 1
   LoopInitialMovementDirection: 0
   PathElements:
-  - PathElementPosition: {x: -130.3277, y: -128.67426, z: 0}
+  - PathElementPosition: {x: -116.70054, y: -52.186356, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 124.091606, y: -130.26187, z: 0}
+  - PathElementPosition: {x: 115.739494, y: -51.136444, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 136.32816, y: 141.09544, z: 0}
+  - PathElementPosition: {x: 116.14019, y: 53.340965, z: 0}
     Delay: 0
-  - PathElementPosition: {x: -129.38866, y: 141.55975, z: 0}
+  - PathElementPosition: {x: -116.42104, y: 52.17892, z: 0}
     Delay: 0
   ReferenceMMPath: {fileID: 0}
   AbsoluteReferencePath: 0
@@ -5713,7 +5713,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 90b4a85560efd8044ba3c7c82bef32f5, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10605,7 +10604,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 90b4a85560efd8044ba3c7c82bef32f5, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

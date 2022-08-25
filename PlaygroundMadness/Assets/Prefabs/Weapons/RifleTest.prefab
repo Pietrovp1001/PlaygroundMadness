@@ -5109,7 +5109,7 @@ MonoBehaviour:
   WeaponUseTransform: {fileID: 0}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
-  ModifyMovementWhileAttacking: 1
+  ModifyMovementWhileAttacking: 0
   MovementMultiplier: 1
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
@@ -5139,15 +5139,15 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 4.1, y: 0.07, z: 0}
+  ProjectileSpawnOffset: {x: 2.87, y: 0.07, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectilesPerShot: 1
   SpawnTransforms: []
   SpawnTransformsMode: 1
   Spread: {x: 0, y: 0, z: 10}
-  RotateWeaponOnSpread: 1
-  RandomSpread: 1
-  SpawnPosition: {x: 2.87, y: 0.073, z: 0}
+  RotateWeaponOnSpread: 0
+  RandomSpread: 0
+  SpawnPosition: {x: 1.6399999, y: 0.073, z: 0}
   SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &114137986743622244

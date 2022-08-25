@@ -9981,7 +9981,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 5
+  LifeTime: 2.2
 --- !u!114 &114589826025121120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10150,14 +10150,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bd7023db6ee1843a9f13e6f22757a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoundsBasedOn: 1
+  BoundsBasedOn: 3
   ExecuteOnEnable:
     m_PersistentCalls:
       m_Calls: []
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 5
+  LifeTime: 2.2
   FaceDirection: 1
   FaceMovement: 0
   MovementVector: 0
@@ -10172,7 +10172,7 @@ MonoBehaviour:
   BounceRaycastLength: 1
   BounceLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   BounceFeedback: {fileID: 0}
   AmountOfBounces: {x: 5, y: 5}
   SpeedModifier: {x: 0.9, y: 0.9}
