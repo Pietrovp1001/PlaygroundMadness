@@ -13,10 +13,21 @@ public class TriggerSpawner : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player") && used == false)
         {
-            Spawner.SpawnObject();
-            used = true;
+            RoomCounter rooms = col.GetComponent<RoomCounter>();
+            if (rooms.roomCount > 0)
+            {
+                Spawner.SpawnObject();
+                used = true;
+                rooms.roomCount++;
+            }
+            else
+            {
+                rooms.roomCount++;
+                used = true;
+            }
         }
     }
+
     
     /*if (Activator.gameObject.activeInHierarchy)
      {

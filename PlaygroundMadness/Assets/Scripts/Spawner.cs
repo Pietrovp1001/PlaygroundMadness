@@ -11,46 +11,54 @@ public class Spawner : MonoBehaviour
     public List<GameObject> enemiesToSpawn = new List<GameObject>();
     public List<GameObject> spawnToObject = new List<GameObject>();
     public List<ParticleSystem> spawnEffects = new List<ParticleSystem>();
+    public List<GameObject> doors = new List<GameObject>();
+
+    private int enemyCount;
     
-    
-    public float currentTimeToSpawn;
-    private float timeToSpawn;
-    public bool isTimer;
     public bool isRandom;
+    public int waveCount = 1;
 
     private void Start()
     {
-        currentTimeToSpawn = timeToSpawn;
-    }
-
-    private void Update()
-    {
-        if (isTimer)
+        for (int i = 0; i < doors.Count; i++)
         {
-            UpdateTimer();
-        }
-    }
-
-    private void UpdateTimer()
-    {
-        if (currentTimeToSpawn > 0)
-        {
-            currentTimeToSpawn -= Time.deltaTime;
-        }
-        else
-        {
-            SpawnObject();
-            currentTimeToSpawn = timeToSpawn;
+            doors[i].SetActive(false);
         }
     }
 
     public void SpawnObject()
     {
-        int indexEnemy = isRandom ? Random.Range(0, enemiesToSpawn.Count) : 0;
+        for (int i = 0; i < doors.Count; i++)
+        {
+            doors[i].SetActive(true);
+        }
+        enemyCount = spawnToObject.Count;
         for (int i = 0; i < spawnToObject.Count; i++) {
-            if (enemiesToSpawn.Count > 0) {
-                Instantiate(enemiesToSpawn[indexEnemy], spawnToObject[i].transform.position, Quaternion.identity);
+            int indexEnemy = isRandom ? Random.Range(0, enemiesToSpawn.Count) : 0;
+            if (enemiesToSpawn.Count > 0) 
+            {
+                GameObject enemy = Instantiate(enemiesToSpawn[indexEnemy], spawnToObject[i].transform.position, Quaternion.identity);
+                enemy.GetComponent<Health>().OnDeath += EnemyCount;
                 spawnEffects[i].Play();
+            }
+        }
+    }
+    private void EnemyCount()
+    {
+        enemyCount--;
+        if (enemyCount == 0) 
+        {
+            if (waveCount > 0)
+            {
+                SpawnObject();
+                waveCount--;
+            }
+            else
+            {
+                for (int i = 0; i < doors.Count; i++)
+                {
+                    doors[i].SetActive(false);
+                }
             }
         }
     }

@@ -16143,6 +16143,7 @@ GameObject:
   - component: {fileID: 8286017869648330670}
   - component: {fileID: 8285820925940487076}
   - component: {fileID: 8286183966988438928}
+  - component: {fileID: -8031711256962455823}
   m_Layer: 10
   m_Name: Osito
   m_TagString: Player
@@ -16663,6 +16664,18 @@ MonoBehaviour:
   EdgePrecision: 3
   EdgeThreshold: 0.5
   VisionMeshFilter: {fileID: 8295602180753942174}
+--- !u!114 &-8031711256962455823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8317562604098880704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b47a33eb3f21704686f9b8b091f213d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8317612777914509886
 GameObject:
   m_ObjectHideFlags: 0
