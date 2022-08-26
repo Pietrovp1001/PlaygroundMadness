@@ -5010,6 +5010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8961580877546617240}
   - {fileID: 4616784861444994}
   m_Father: {fileID: 4943838447161096}
   m_RootOrder: 0
@@ -5062,7 +5063,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490220044263310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: 0.003, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5102,7 +5103,7 @@ MonoBehaviour:
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 0
-  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
+  WeaponAttachmentOffset: {x: -1.5, y: 0.8, z: 0}
   FlipWeaponOnCharacterFlip: 1
   RightFacingFlipValue: {x: 1, y: 1, z: 1}
   LeftFacingFlipValue: {x: -1, y: 1, z: 1}
@@ -5139,15 +5140,16 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 2.87, y: 0.07, z: 0}
+  ProjectileSpawnOffset: {x: 1.58, y: 0.1, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectilesPerShot: 1
-  SpawnTransforms: []
+  SpawnTransforms:
+  - {fileID: 8961580877546617240}
   SpawnTransformsMode: 1
   Spread: {x: 0, y: 0, z: 10}
   RotateWeaponOnSpread: 0
   RandomSpread: 0
-  SpawnPosition: {x: 1.6399999, y: 0.073, z: 0}
+  SpawnPosition: {x: 1.621, y: 0.093, z: -0.0054546697}
   SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &114137986743622244
@@ -5187,7 +5189,7 @@ MonoBehaviour:
   MinimumAngle: -180
   MaximumAngle: 180
   MinimumMagnitude: 0.2
-  ReticleType: 2
+  ReticleType: 0
   Reticle: {fileID: 1373789777524232, guid: f31b518c2b50cc2479370c46d4485485, type: 3}
   ReticleDistance: 5
   ReticleHeight: 0
@@ -5247,7 +5249,7 @@ Transform:
   m_Children:
   - {fileID: 4921664011988614}
   m_Father: {fileID: 4322627176265138}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &212409535536248356
 SpriteRenderer:
@@ -19969,6 +19971,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &3610138686380572823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8961580877546617240}
+  m_Layer: 0
+  m_Name: BulletSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8961580877546617240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610138686380572823}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.659, y: 0.093, z: -0.0054546697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4322627176265138}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6782130154809320540
 GameObject:
   m_ObjectHideFlags: 0
@@ -20000,7 +20033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6782130154809320540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.212681, y: -0.12122536, z: 0}
+  m_LocalPosition: {x: 1.05, y: 0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
