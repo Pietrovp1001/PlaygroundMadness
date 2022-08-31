@@ -751,6 +751,12 @@ PrefabInstance:
       propertyPath: doors.Array.data[1]
       value: 
       objectReference: {fileID: 539660051311952188}
+    - target: {fileID: 4643274365779258247, guid: dc6095228fcdba04aac1b32447ef847e,
+        type: 3}
+      propertyPath: enemiesToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 6071085224393174006, guid: 606138edbb7ac444aa5e1984d907789e,
+        type: 3}
     - target: {fileID: 4949667456341199583, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_Name

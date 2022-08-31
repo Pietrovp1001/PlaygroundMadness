@@ -15072,8 +15072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesToSpawn:
-  - {fileID: 1170912388798894, guid: 269488e372b6ff44d86ef6eccd5f3484, type: 3}
-  - {fileID: 2325596686016990461, guid: fa94d060fdacc324aa318cc4a38f7266, type: 3}
+  - {fileID: 6071085224393174006, guid: 606138edbb7ac444aa5e1984d907789e, type: 3}
+  - {fileID: 6318534739540167080, guid: 1206f79e2b0d3ac498eab8f4f28a3123, type: 3}
   spawnToObject:
   - {fileID: 179777275762913907}
   - {fileID: 5306377723552615876}
@@ -15084,7 +15084,11 @@ MonoBehaviour:
   - {fileID: 9223181004528888071}
   - {fileID: 4266887776977273806}
   - {fileID: 4749724802431920325}
-  doors: []
+  doors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   isRandom: 1
   waveCount: 1
 --- !u!1 &7288022709452752156
