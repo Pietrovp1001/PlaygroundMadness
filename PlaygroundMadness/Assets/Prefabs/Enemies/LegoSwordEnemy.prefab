@@ -5232,7 +5232,7 @@ GameObject:
   - component: {fileID: 6184015375232232522}
   - component: {fileID: 2106444808723443208}
   m_Layer: 13
-  m_Name: Lego 01 Enemy
+  m_Name: LegoSwordEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5292,7 +5292,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.62643313}
+  m_Offset: {x: -0.07748413, y: 0.56251526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5303,7 +5303,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 1.3728662}
+  m_Size: {x: 0.6387329, y: 1.5007019}
   m_EdgeRadius: 0
 --- !u!210 &6244782424751839196
 SortingGroup:
@@ -5436,7 +5436,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 6
+  WalkSpeed: 8
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10

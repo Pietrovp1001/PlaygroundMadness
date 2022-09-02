@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Cinemachine;
 using MoreMountains.TopDownEngine;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
@@ -12,12 +13,14 @@ public class Spawner : MonoBehaviour
     public List<GameObject> spawnToObject = new List<GameObject>();
     public List<ParticleSystem> spawnEffects = new List<ParticleSystem>();
     public List<GameObject> doors = new List<GameObject>();
-
+    
+   
+    
     private int enemyCount;
     
     public bool isRandom;
     public int waveCount = 1;
-
+    
     private void Start()
     {
         for (int i = 0; i < doors.Count; i++)
