@@ -5131,7 +5131,7 @@ MonoBehaviour:
   WeaponAngleAnimationParameter: 
   WeaponAngleRelativeAnimationParameter: 
   WeaponStartMMFeedback: {fileID: 0}
-  WeaponUsedMMFeedback: {fileID: 1710523558594538418}
+  WeaponUsedMMFeedback: {fileID: 0}
   WeaponUsedMMFeedbackAlt: {fileID: 0}
   WeaponStopMMFeedback: {fileID: 0}
   WeaponReloadMMFeedback: {fileID: 0}
@@ -5146,7 +5146,7 @@ MonoBehaviour:
   SpawnTransformsMode: 1
   Spread: {x: 0, y: 0, z: 10}
   RotateWeaponOnSpread: 1
-  RandomSpread: 1
+  RandomSpread: 0
   SpawnPosition: {x: 0.831, y: 0.073, z: 0}
   SpawnFeedbacks: []
   TestShootButton: 0
