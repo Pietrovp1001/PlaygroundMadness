@@ -8,7 +8,7 @@ public class MinimapCamera : MonoBehaviour
 
     private void LateUpdate() {
         Vector2 newPosition = myPosition.position;
-        newPosition.y = transform.position.y;
+        //newPosition.y = transform.position.y;
         transform.position = newPosition;
     }
 }
