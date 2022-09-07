@@ -4,5 +4,13 @@ using UnityEngine;
 
 public class LockedRoom : MonoBehaviour
 {
-    //In progress
+    [SerializeField] private Transform player;
+    [SerializeField] private GameObject locked;
+
+    private void Update() {
+        if (player.position == locked.transform.position) {
+            locked.SetActive(false);
+        }
+    }
+    
 }
