@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6842122615825787502}
-  - component: {fileID: 5564889892968959027}
+  - component: {fileID: 7687126384934137385}
   m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
@@ -32,19 +32,32 @@ Transform:
   m_Father: {fileID: 2320141995443420373}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5564889892968959027
-BoxCollider:
+--- !u!61 &7687126384934137385
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891825149036497998}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5687335, y: -1.622695}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1946115, y: 4.2174473, z: 1}
-  m_Center: {x: 0.5664521, y: -1.6087236, z: 0}
+  m_Size: {x: 2.2177587, y: 4.24539}
+  m_EdgeRadius: 0
 --- !u!1 &2148166530328024032
 GameObject:
   m_ObjectHideFlags: 0

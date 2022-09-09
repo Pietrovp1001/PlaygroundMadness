@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4905197028365735705}
-  - component: {fileID: 6033673935875926008}
+  - component: {fileID: 2444902340658341998}
   m_Layer: 0
   m_Name: colli
   m_TagString: Untagged
@@ -32,19 +32,32 @@ Transform:
   m_Father: {fileID: 7332241475761111845}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6033673935875926008
-BoxCollider:
+--- !u!61 &2444902340658341998
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33620553639661312}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -12.486736, y: 3.4114223}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.485649, y: 4.005186, z: 1}
-  m_Center: {x: -12.494551, y: 3.4428253, z: 0}
+  m_Size: {x: 4.545764, y: 3.942237}
+  m_EdgeRadius: 0
 --- !u!1 &5380288449079571438
 GameObject:
   m_ObjectHideFlags: 0
