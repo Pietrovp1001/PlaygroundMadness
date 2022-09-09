@@ -5101,9 +5101,9 @@ MonoBehaviour:
   WeaponName: Lego Boss
   WeaponCurrentlyActive: 1
   TriggerMode: 1
-  DelayBeforeUse: 0
+  DelayBeforeUse: 2
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 2
+  TimeBetweenUses: 3
   TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
   BurstLength: 3
@@ -5133,12 +5133,12 @@ MonoBehaviour:
   PerformAnimatorSanityChecks: 0
   WeaponAnimationID: 0
   IdleAnimationParameter: 
-  StartAnimationParameter: Shoot
-  DelayBeforeUseAnimationParameter: Shoot
-  SingleUseAnimationParameter: Shoot
-  UseAnimationParameter: Shoot
-  DelayBetweenUsesAnimationParameter: Shoot
-  StopAnimationParameter: Shoot
+  StartAnimationParameter: 
+  DelayBeforeUseAnimationParameter: 
+  SingleUseAnimationParameter: Shot
+  UseAnimationParameter: 
+  DelayBetweenUsesAnimationParameter: 
+  StopAnimationParameter: 
   ReloadStartAnimationParameter: 
   ReloadAnimationParameter: 
   ReloadStopAnimationParameter: 
