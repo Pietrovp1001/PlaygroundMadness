@@ -4991,6 +4991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4322627176265138}
   - component: {fileID: 95036209968351816}
+  - component: {fileID: 8475802807469937381}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -5024,7 +5025,7 @@ Animator:
   m_GameObject: {fileID: 1380763282036944}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a86a4a9e97cdee146a8ab7d02cdd7985, type: 2}
+  m_Controller: {fileID: 9100000, guid: 266397ae91ecca74db2f1c26457d1978, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5034,6 +5035,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8475802807469937381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380763282036944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16577831eb1538847a3d1802d9a738db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoRemoveAfterInitialization: 1
+  AddAnimationParametersButton: 0
 --- !u!1 &1490220044263310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5048,7 +5063,7 @@ GameObject:
   - component: {fileID: 114345180357598506}
   - component: {fileID: 114251315345146356}
   m_Layer: 0
-  m_Name: KoalaNinjaRifle 1
+  m_Name: Lego Boss weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5083,13 +5098,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: 
+  WeaponName: Lego Boss
   WeaponCurrentlyActive: 1
   TriggerMode: 1
   DelayBeforeUse: 0
-  DelayBeforeUseReleaseInterruption: 1
+  DelayBeforeUseReleaseInterruption: 0
   TimeBetweenUses: 2
-  TimeBetweenUsesReleaseInterruption: 1
+  TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
   BurstLength: 3
   BurstTimeBetweenShots: 0.1
@@ -5110,21 +5125,20 @@ MonoBehaviour:
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 1
-  MovementMultiplier: 0.5
-  PreventAllMovementWhileInUse: 0
+  MovementMultiplier: 0
+  PreventAllMovementWhileInUse: 1
   PreventAllAimWhileInUse: 0
   RecoilForce: 0
-  Animators:
-  - {fileID: 95036209968351816}
+  Animators: []
   PerformAnimatorSanityChecks: 0
   WeaponAnimationID: 0
   IdleAnimationParameter: 
-  StartAnimationParameter: 
-  DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: SingleUse
-  UseAnimationParameter: 
-  DelayBetweenUsesAnimationParameter: 
-  StopAnimationParameter: 
+  StartAnimationParameter: Shoot
+  DelayBeforeUseAnimationParameter: Shoot
+  SingleUseAnimationParameter: Shoot
+  UseAnimationParameter: Shoot
+  DelayBetweenUsesAnimationParameter: Shoot
+  StopAnimationParameter: Shoot
   ReloadStartAnimationParameter: 
   ReloadAnimationParameter: 
   ReloadStopAnimationParameter: 
