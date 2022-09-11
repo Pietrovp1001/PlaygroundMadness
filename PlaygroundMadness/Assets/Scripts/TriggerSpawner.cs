@@ -8,33 +8,27 @@ using UnityEngine.UI;
 
 public class TriggerSpawner : MonoBehaviour
 {
-    //public GameObject EarlyTrigger;
-    //[SerializeField] GameObject Activator;
     public Spawner Spawner;
     private bool used = false;
-    
+    public GameObject locked;
+    public GameObject playerPos;
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        
-        if (col.gameObject.CompareTag("Player") && used == false)
-        {
-            RoomCounter rooms = col.GetComponent<RoomCounter>();
-            if (rooms.roomCount > 0)
-            {
-                Spawner.SpawnObject();
+        if (col.gameObject.CompareTag("Player")) {
+            playerPos.SetActive(true);
+            if (used == false) {
+                RoomCounter rooms = col.GetComponent<RoomCounter>();
+                if (rooms.roomCount > 0) Spawner.SpawnObject();
                 used = true;
                 rooms.roomCount++;
-            }
-            else
-            {
-                rooms.roomCount++;
-                used = true;
+                locked.SetActive(false);
             }
         }
-
-        
-        
-        
+    }
+    private void OnTriggerExit2D(Collider2D col) {
+        if (col.gameObject.CompareTag("Player")) {
+            playerPos.SetActive(false);
+        }
     }
 }
