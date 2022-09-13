@@ -15092,10 +15092,9 @@ MonoBehaviour:
   - {fileID: 0}
   roomCounter: {fileID: 0}
   bossPortal: {fileID: 4843465820581287597}
-  roomCount: 0
   enemyCount: 0
   isRandom: 1
-  waveCount: 1
+  waveCount: 0
 --- !u!1 &7288022709452752156
 GameObject:
   m_ObjectHideFlags: 0
@@ -20122,6 +20121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spawner: {fileID: 4643274365779258247}
+  locked: {fileID: 0}
+  playerPos: {fileID: 0}
 --- !u!1001 &2132738650660216428
 PrefabInstance:
   m_ObjectHideFlags: 0

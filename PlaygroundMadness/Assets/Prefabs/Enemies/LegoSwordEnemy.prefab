@@ -5246,7 +5246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6071085224393174006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1262.9126, y: 553.3771, z: -100}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5398,7 +5398,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  FacingMode: 3
+  FacingMode: 1
   FacingBase: 0
   ModelShouldFlip: 0
   ModelFlipValueLeft: {x: -1, y: 1, z: 1}
@@ -5436,7 +5436,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 8
+  WalkSpeed: 12
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
@@ -5510,7 +5510,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 114594623923584052, guid: 4069a3a0fab9aa14aa3863708b264eab,
+  InitialWeapon: {fileID: 114594623923584052, guid: 42b84c8747b3d1045890ffaedcbaf8e2,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -5601,15 +5601,12 @@ MonoBehaviour:
       - {fileID: 6183737517164466868}
     Transitions:
       array:
-      - Decision: {fileID: 6183781636071479774}
-        TrueState: 
-        FalseState: Detecting
-      - Decision: {fileID: 6183952648068435410}
-        TrueState: 
-        FalseState: Detecting
       - Decision: {fileID: 6186961199524032064}
         TrueState: Attacking
         FalseState: 
+      - Decision: {fileID: 6183781636071479774}
+        TrueState: 
+        FalseState: Detecting
   - StateName: Attacking
     Actions:
       array:
@@ -5651,7 +5648,7 @@ MonoBehaviour:
   ObstacleDetection: 1
   ObstacleMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   ObstaclesDetectionMode: 1
   CanTargetSelf: 0
   TargetCheckFrequency: 1
@@ -5730,7 +5727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   ComparisonMode: 1
-  Distance: 5
+  Distance: 10
 --- !u!114 &6184015375232232522
 MonoBehaviour:
   m_ObjectHideFlags: 0

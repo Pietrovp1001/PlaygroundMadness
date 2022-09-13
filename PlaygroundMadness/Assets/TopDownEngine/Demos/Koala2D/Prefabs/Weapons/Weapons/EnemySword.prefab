@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 114096976402940132}
   - component: {fileID: 114049947547974234}
   m_Layer: 10
-  m_Name: KoalaSword
+  m_Name: EnemySword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,11 +29,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831551693771866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.38, y: -1.41, z: -0.04543307}
+  m_LocalPosition: {x: 0, y: 0.462, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4359571763133392}
+  - {fileID: 5498713181539383226}
   - {fileID: 4933920765886181543}
   - {fileID: 6812653807802518676}
   - {fileID: 1882808507077358398}
@@ -86,7 +87,7 @@ MonoBehaviour:
   WeaponName: KoalaSword
   WeaponCurrentlyActive: 1
   TriggerMode: 0
-  DelayBeforeUse: 0.4
+  DelayBeforeUse: 0.2
   DelayBeforeUseReleaseInterruption: 0
   TimeBetweenUses: 0.1
   TimeBetweenUsesReleaseInterruption: 0
@@ -102,11 +103,11 @@ MonoBehaviour:
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 30
-  WeaponAttachmentOffset: {x: 0.185, y: 0.31, z: 0}
+  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
   FlipWeaponOnCharacterFlip: 1
   RightFacingFlipValue: {x: 1, y: 1, z: 1}
   LeftFacingFlipValue: {x: -1, y: 1, z: 1}
-  WeaponUseTransform: {fileID: 0}
+  WeaponUseTransform: {fileID: 5498713181539383226}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 0
@@ -141,7 +142,7 @@ MonoBehaviour:
   Flipped: 0
   MeleeDamageAreaMode: 0
   DamageAreaShape: 0
-  AreaSize: {x: 4, y: 2, z: 0}
+  AreaSize: {x: 4, y: 4, z: 0}
   AreaOffset: {x: 0.64, y: 0, z: 0}
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
@@ -154,7 +155,7 @@ MonoBehaviour:
   MinDamageCaused: 10
   MaxDamageCaused: 10
   Knockback: 1
-  KnockbackForce: {x: 500, y: 0, z: 0}
+  KnockbackForce: {x: 20, y: 0, z: 0}
   InvincibilityDuration: 0.5
   CanDamageOwner: 0
 --- !u!114 &114290391021249986
@@ -192,7 +193,7 @@ MonoBehaviour:
   FlipWeaponOnCharacterFlip: 1
   RightFacingFlipValue: {x: 1, y: 1, z: 1}
   LeftFacingFlipValue: {x: -1, y: 1, z: 1}
-  WeaponUseTransform: {fileID: 0}
+  WeaponUseTransform: {fileID: 5498713181539383226}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 0
@@ -227,7 +228,7 @@ MonoBehaviour:
   Flipped: 0
   MeleeDamageAreaMode: 0
   DamageAreaShape: 0
-  AreaSize: {x: 3, y: 3, z: 0}
+  AreaSize: {x: 4, y: 4, z: 0}
   AreaOffset: {x: 0.57, y: 0.2, z: 0}
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
@@ -278,7 +279,7 @@ MonoBehaviour:
   FlipWeaponOnCharacterFlip: 1
   RightFacingFlipValue: {x: 1, y: 1, z: 1}
   LeftFacingFlipValue: {x: -1, y: 1, z: 1}
-  WeaponUseTransform: {fileID: 0}
+  WeaponUseTransform: {fileID: 5498713181539383226}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 0
@@ -313,7 +314,7 @@ MonoBehaviour:
   Flipped: 0
   MeleeDamageAreaMode: 0
   DamageAreaShape: 0
-  AreaSize: {x: 4, y: 3, z: 0}
+  AreaSize: {x: 4, y: 4, z: 0}
   AreaOffset: {x: 1.5, y: 0.5, z: 0}
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
@@ -422,7 +423,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 63bbc3a420e7c1749af6342fd3dd09b8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6698113, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -486,7 +487,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4565189611861034}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5792086717607066305
 MonoBehaviour:
@@ -853,7 +854,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4565189611861034}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9077831138300214378
 MonoBehaviour:
@@ -1278,6 +1279,37 @@ MonoBehaviour:
   MinPitch: 1
   MaxPitch: 1
   SfxAudioMixerGroup: {fileID: 0}
+--- !u!1 &6156339319104424567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5498713181539383226}
+  m_Layer: 0
+  m_Name: TransformGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5498713181539383226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6156339319104424567}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.576, y: 0.135, z: -0.0023834296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4565189611861034}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6211418183160165590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1344,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4565189611861034}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7309485491381257583
 MonoBehaviour:
