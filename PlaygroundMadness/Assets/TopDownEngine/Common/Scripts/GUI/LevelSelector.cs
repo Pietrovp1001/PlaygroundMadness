@@ -63,6 +63,8 @@ namespace MoreMountains.TopDownEngine
 			// we trigger an unPause event for the GameManager (and potentially other classes)
 			//TopDownEngineEvent.Trigger(TopDownEngineEventTypes.UnPause, null);
 			LoadScene(SceneManager.GetActiveScene().name);
+			Destroy(LevelManager.Instance.Players[0].gameObject);
+			Destroy(GameManager.Instance.gameObject);
 		}
 		
 	}
