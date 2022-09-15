@@ -64,5 +64,7 @@ namespace MoreMountains.Tools
 		{
 			TargetAnimator.SetBool(_parameter, value);
 		}
+		
+		
 	}
 }

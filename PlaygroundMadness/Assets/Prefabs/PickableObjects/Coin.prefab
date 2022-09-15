@@ -168,9 +168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1684332526429566890}
   - component: {fileID: 1699663458605403458}
-  - component: {fileID: 1646493890723903540}
-  - component: {fileID: 1646850245188626364}
-  - component: {fileID: 3784658579595421416}
   m_Layer: 0
   m_Name: KoalaCoinPicker (16)
   m_TagString: Untagged
@@ -223,77 +220,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &1646493890723903540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678678163823585024}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86fd837a0abc28d4d91c55590bd2c090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 1592bd12b16c62a438df214272ff2b45, type: 2}
-  Quantity: 1
-  RemainingQuantity: 1
-  PickableIfInventoryIsFull: 0
-  DisableObjectWhenDepleted: 0
---- !u!114 &1646850245188626364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678678163823585024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1feff4042ae759c49a290443b9bfdd71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickedMMFeedbacks: {fileID: 8694287960827386325}
-  DisableColliderOnPick: 0
-  DisableObjectOnPick: 1
-  DisableDelay: 0
-  DisableModelOnPick: 0
-  DisableTargetObjectOnPick: 0
-  TargetObjectToDisable: {fileID: 0}
-  TargetObjectDisableDelay: 1
-  Model: {fileID: 0}
---- !u!114 &3784658579595421416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678678163823585024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 723c68a65280145479e4e0b2f94a6ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Events:
-  - AutoExecuteOnAwake: 0
-    AutoExecuteOnEnable: 0
-    AutoExecuteOnDisable: 0
-    AutoExecuteOnStart: 0
-    AutoExecuteOnInstantiate: 1
-    Event:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8807388337522226318}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: PlayFeedbacks
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1678844460141903648
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +450,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 53d7a3adf877b4b72b7ec879fd0c0c75, type: 3}
+  Sfx: {fileID: 8300000, guid: 665dcf18550f16f4eab039e2302f0d5f, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
@@ -1137,6 +1063,8 @@ GameObject:
   - component: {fileID: 7424390438463087188}
   - component: {fileID: 8461684999961380354}
   - component: {fileID: 8576087341935194070}
+  - component: {fileID: 446657081}
+  - component: {fileID: 446657082}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -1153,7 +1081,7 @@ Transform:
   m_GameObject: {fileID: 8263376455190689405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.75, y: -8.3, z: 0.02}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1684332526429566890}
@@ -1215,3 +1143,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickedMMFeedbacks: {fileID: 8694287960827386325}
+--- !u!114 &446657081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263376455190689405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723c68a65280145479e4e0b2f94a6ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Events:
+  - AutoExecuteOnAwake: 0
+    AutoExecuteOnEnable: 0
+    AutoExecuteOnDisable: 0
+    AutoExecuteOnStart: 0
+    AutoExecuteOnInstantiate: 1
+    Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8807388337522226318}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: PlayFeedbacks
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &446657082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263376455190689405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1feff4042ae759c49a290443b9bfdd71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickedMMFeedbacks: {fileID: 8694287960827386325}
+  DisableColliderOnPick: 1
+  DisableObjectOnPick: 1
+  DisableDelay: 0
+  DisableModelOnPick: 1
+  DisableTargetObjectOnPick: 0
+  TargetObjectToDisable: {fileID: 0}
+  TargetObjectDisableDelay: 1
+  Model: {fileID: 8263376455190689405}
