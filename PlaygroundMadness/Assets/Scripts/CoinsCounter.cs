@@ -8,8 +8,11 @@ public class CoinsCounter : MonoBehaviour
 {
     private Text _text;
 
+    
+
     private void Awake()
     {
+        
         _text = GetComponent<Text>();
     }
 
@@ -17,5 +20,7 @@ public class CoinsCounter : MonoBehaviour
     {
         
         _text.text = Colectable.coinsCollected.ToString();
+        
     }
+    
 }

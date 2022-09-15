@@ -1,14 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.Feedbacks;
+using MoreMountains.TopDownEngine;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Colectable : MonoBehaviour
 {
-    [SerializeField] public static int coinsCollected = 0;
+
+    public static int coinsCollected = 0;
     public MMFeedbacks PickedMMFeedbacks;
+
+    void Update()
+    {
+        if (LevelManager.Instance.Players[0].GetComponent<Health>().CurrentHealth == 0)
+        {
+            RestartCoins();
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         if (otherCollider.tag == "Player")
@@ -18,4 +30,10 @@ public class Colectable : MonoBehaviour
             Debug.Log("Coins Collected: " + coinsCollected);
         }
     }
+
+    public void RestartCoins()
+    {
+        coinsCollected = 0;
+    }
+    
 }

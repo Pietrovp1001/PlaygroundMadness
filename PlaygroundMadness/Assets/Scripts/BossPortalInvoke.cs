@@ -13,7 +13,7 @@ public class BossPortalInvoke : MonoBehaviour
     void Update()
     {
         
-        if( LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount == 2  || spawners.enemyCount == 0)
+        if( LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount == 10  || spawners.enemyCount == 0)
         {
             CreatePortal();
         }

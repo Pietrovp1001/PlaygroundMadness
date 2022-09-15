@@ -8,17 +8,22 @@ namespace MoreMountains.TopDownEngine
 	/// <summary>
 	/// This component allows the definition of a level that can then be accessed and loaded. Used mostly in the level map scene.
 	/// </summary>
-	[AddComponentMenu("TopDown Engine/GUI/LevelSelector")]
+	/// [AddComponentMenu("TopDown Engine/GUI/LevelSelector")]
+	
 	public class LevelSelector : MonoBehaviour
 	{
+		
 		/// the exact name of the target level
 		[Tooltip("the exact name of the target level")]
 		public string LevelName;
-
+		
 		/// if this is true, GoToLevel will ignore the LevelManager and do a direct call
 		[Tooltip("if this is true, GoToLevel will ignore the LevelManager and do a direct call")]
 		public bool DoNotUseLevelManager = false;
-
+		
+		//call Colectable.cs here
+		
+		
 		/// <summary>
 		/// Loads the level specified in the inspector
 		/// </summary>
@@ -65,7 +70,11 @@ namespace MoreMountains.TopDownEngine
 			LoadScene(SceneManager.GetActiveScene().name);
 			Destroy(LevelManager.Instance.Players[0].gameObject);
 			Destroy(GameManager.Instance.gameObject);
+			
+
 		}
-		
+
 	}
+
+
 }
