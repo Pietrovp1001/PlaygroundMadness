@@ -15,6 +15,8 @@ public class Spawner : MonoBehaviour
     public List<GameObject> doors = new List<GameObject>();
     public RoomCounter roomCounter;
     public GameObject bossPortal;
+    
+    
     //public int roomCount = LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount;
 
     public int enemyCount;
@@ -43,8 +45,7 @@ public class Spawner : MonoBehaviour
             int indexEnemy = isRandom ? Random.Range(0, enemiesToSpawn.Count) : 0;
             if (enemiesToSpawn.Count > 0)
             {
-                GameObject enemy = Instantiate(enemiesToSpawn[indexEnemy], spawnToObject[i].transform.position,
-                    Quaternion.identity);
+                GameObject enemy = Instantiate(enemiesToSpawn[indexEnemy], spawnToObject[i].transform.position, Quaternion.identity);
                 enemy.GetComponent<Health>().OnDeath += EnemyCount;
                 spawnEffects[i].Play();
             }

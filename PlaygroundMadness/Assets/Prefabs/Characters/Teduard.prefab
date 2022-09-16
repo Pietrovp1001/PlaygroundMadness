@@ -16827,9 +16827,9 @@ MonoBehaviour:
   InitialHealth: 60
   MaximumHealth: 60
   ResetHealthOnEnable: 1
-  ImmuneToDamage: 1
+  ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4376276790352035905}
-  FeedbackIsProportionalToDamage: 0
+  FeedbackIsProportionalToDamage: 1
   PreventTakeSelfDamage: 1
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0

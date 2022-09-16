@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4067358023085436}
   - component: {fileID: 212797044214329334}
   - component: {fileID: 95175321394988512}
-  - component: {fileID: 819369790353776228}
+  - component: {fileID: 425251558}
   m_Layer: 13
-  m_Name: NinjaModel
+  m_Name: LegoModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089166889239254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.625, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4278877128282960}
   - {fileID: 4722835156137560}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aba7b5c63d9ec304b89edc574d32d4bd, type: 3}
+  m_Sprite: {fileID: 269484078, guid: 2a40b8461b6f35e4595bc2e9168a747d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1089166889239254}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: d7409d88ace7ca245b60e0240311dba4, type: 2}
+  m_Controller: {fileID: 9100000, guid: cc342475331178943bac9ca2f73684a0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -108,20 +108,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &819369790353776228
-MonoBehaviour:
+--- !u!61 &425251558
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089166889239254}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16577831eb1538847a3d1802d9a738db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoRemoveAfterInitialization: 1
-  AddAnimationParametersButton: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13115484, y: 0.43329364}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.65625, y: 0.96875}
+    newSize: {x: 0.24, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26692688, y: 0.8665873}
+  m_EdgeRadius: 0
 --- !u!1 &1561694053617324
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,8 +160,9 @@ GameObject:
   - component: {fileID: 114113908976523258}
   - component: {fileID: 114103483350062584}
   - component: {fileID: 114778105809703722}
+  - component: {fileID: 3144287143330591665}
   m_Layer: 13
-  m_Name: BigEnemySlow
+  m_Name: ContactEnemy_Normal
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,8 +177,8 @@ Transform:
   m_GameObject: {fileID: 1561694053617324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 54.01, y: -21.51, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4398990619741280}
   - {fileID: 4067358023085436}
@@ -208,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12313366, y: 0.6914873}
+  m_Offset: {x: -0.26494297, y: 0.87699664}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -219,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9626827, y: 1.3955126}
+  m_Size: {x: 0.5788701, y: 1.7665312}
   m_EdgeRadius: 0
 --- !u!210 &210462174901479078
 SortingGroup:
@@ -352,7 +365,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 8
+  WalkSpeed: 10
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
@@ -369,7 +382,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561694053617324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d103439fc2940e347937487a70ea01e3, type: 3}
   m_Name: 
@@ -392,7 +405,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561694053617324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed8c17a9a9fed854daff1f08f315ad69, type: 3}
   m_Name: 
@@ -421,8 +434,8 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 300
-  MaximumHealth: 300
+  InitialHealth: 25
+  MaximumHealth: 25
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 3547864438223399480}
@@ -431,8 +444,8 @@ MonoBehaviour:
   ImmuneToKnockback: 1
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1
-  DestroyOnDeath: 0
-  DelayBeforeDestruction: 0
+  DestroyOnDeath: 1
+  DelayBeforeDestruction: 0.2
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -582,8 +595,8 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 40
-  MaxDamageCaused: 40
+  MinDamageCaused: 5
+  MaxDamageCaused: 5
   TypedDamages: []
   DamageCausedKnockbackType: 2
   DamageCausedKnockbackDirection: 0
@@ -814,6 +827,19 @@ MonoBehaviour:
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
   HideBarAtZeroDelay: 0
+--- !u!114 &3144287143330591665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561694053617324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7366980171602ef4f8347a77b21adf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAnimator: {fileID: 95175321394988512}
 --- !u!1 &1671905898232590
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,9 +866,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671905898232590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.11, y: 0.383, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4067358023085436}
   m_RootOrder: 1
@@ -1037,7 +1063,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 2
       minColor: {r: 0.091274075, g: 0.08735315, b: 0.122641504, a: 1}
-      maxColor: {r: 0.26666668, g: 0.2509804, b: 0.3921569, a: 1}
+      maxColor: {r: 0.94509804, g: 0.086274505, b: 0.24063818, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5731,9 +5757,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770350836431924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.38, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.345, y: 0.004, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4067358023085436}
   m_RootOrder: 0

@@ -5019,7 +5019,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.28033993, y: 0.9602799}
@@ -5166,12 +5166,12 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 6
+  WalkSpeed: 16
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
   Deceleration: 10
-  InterpolateMovementSpeed: 0
+  InterpolateMovementSpeed: 1
   WalkParticles:
   - {fileID: 2486225367299184165}
   TouchTheGroundParticles: []

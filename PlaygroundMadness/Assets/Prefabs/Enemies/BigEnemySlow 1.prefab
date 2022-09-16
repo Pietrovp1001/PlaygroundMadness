@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4067358023085436}
   - component: {fileID: 212797044214329334}
   - component: {fileID: 95175321394988512}
+  - component: {fileID: 819369790353776228}
   m_Layer: 13
-  m_Name: LegoModel
+  m_Name: NinjaModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089166889239254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0.625, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4278877128282960}
   - {fileID: 4722835156137560}
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 269484078, guid: 2a40b8461b6f35e4595bc2e9168a747d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aba7b5c63d9ec304b89edc574d32d4bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,6 +108,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &819369790353776228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089166889239254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16577831eb1538847a3d1802d9a738db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoRemoveAfterInitialization: 1
+  AddAnimationParametersButton: 0
 --- !u!1 &1561694053617324
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,9 +148,8 @@ GameObject:
   - component: {fileID: 114113908976523258}
   - component: {fileID: 114103483350062584}
   - component: {fileID: 114778105809703722}
-  - component: {fileID: -5701880181194233528}
   m_Layer: 13
-  m_Name: FreeMov_SmallContactLego 1
+  m_Name: BigEnemySlow 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,8 +164,8 @@ Transform:
   m_GameObject: {fileID: 1561694053617324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 54.01, y: -21.51, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4398990619741280}
   - {fileID: 4067358023085436}
@@ -194,7 +208,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.27225113, y: 0.93573165}
+  m_Offset: {x: 0.12313366, y: 0.6914873}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -205,7 +219,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51951027, y: 1.603209}
+  m_Size: {x: 0.9626827, y: 1.3955126}
   m_EdgeRadius: 0
 --- !u!210 &210462174901479078
 SortingGroup:
@@ -334,11 +348,11 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  Movement: 4
+  Movement: 0
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 12
+  WalkSpeed: 8
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
@@ -407,18 +421,18 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 40
-  MaximumHealth: 40
+  InitialHealth: 300
+  MaximumHealth: 300
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 3547864438223399480}
   FeedbackIsProportionalToDamage: 0
   PreventTakeSelfDamage: 0
-  ImmuneToKnockback: 0
+  ImmuneToKnockback: 1
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1
   DestroyOnDeath: 0
-  DelayBeforeDestruction: 0.2
+  DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -568,10 +582,10 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 10
+  MinDamageCaused: 40
+  MaxDamageCaused: 40
   TypedDamages: []
-  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackType: 2
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 500, y: 500, z: 0}
   InvincibilityDuration: 1
@@ -800,89 +814,6 @@ MonoBehaviour:
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
   HideBarAtZeroDelay: 0
---- !u!114 &-5701880181194233528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561694053617324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9bf1ac07f3659498e89157301c9746, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LootMode: 0
-  GameObjectToLoot: {fileID: 8263376455190689405, guid: d7d669211753fce4d8db37bd59be449f,
-    type: 3}
-  LootTable:
-    ObjectsToLoot: []
-    WeightsTotal: 0
-  LootTableSO: {fileID: 0}
-  SpawnLootOnDeath: 1
-  SpawnLootOnDamage: 0
-  PoolLoot: 0
-  PoolSize: 20
-  MutualizedPoolName: 
-  CanSpawn: 1
-  Delay: 0
-  Quantity: {x: 0, y: 1}
-  SpawnProperties:
-    Shape: 0
-    NormalToSpawnPlane: {x: 0, y: 1, z: 0}
-    MinimumSphereRadius: 1
-    MaximumSphereRadius: 2
-    MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
-    MaximumCubeBaseSize: {x: 2, y: 2, z: 2}
-    MinimumNormalAxisOffset: 0
-    MaximumNormalAxisOffset: 0
-    UseNormalAxisOffsetCurve: 0
-    NormalOffsetCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    NormalOffsetCurveRemapZero: 0
-    NormalOffsetCurveRemapOne: 1
-    InvertNormalOffsetCurve: 0
-    MinimumRotation: {x: 0, y: 0, z: 0}
-    MaximumRotation: {x: 0, y: 0, z: 0}
-    MinimumScale: {x: 1, y: 1, z: 1}
-    MaximumScale: {x: 1, y: 1, z: 1}
-  MaximumQuantity: 100
-  RemainingQuantity: 100
-  AvoidObstacles: 0
-  DimensionMode: 0
-  AvoidObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  AvoidRadius: 0.25
-  MaxAvoidAttempts: 5
-  LootFeedback: {fileID: 0}
-  DrawGizmos: 0
-  GizmosQuantity: 1000
-  GizmosColor: {r: 0.827451, g: 0.827451, b: 0.827451, a: 1}
-  GimosSize: 1
-  SpawnLootButton: 0
 --- !u!1 &1671905898232590
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,9 +840,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671905898232590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.139, y: 0.297, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4067358023085436}
   m_RootOrder: 1
@@ -5800,9 +5731,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770350836431924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.339, y: 0.035, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: -0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4067358023085436}
   m_RootOrder: 0
@@ -10623,8 +10554,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983054620183870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.251, y: -0.002, z: 0}
-  m_LocalScale: {x: 1.5426, y: 1, z: 2}
+  m_LocalPosition: {x: 0, y: -0.002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4736116768674126}
@@ -10694,7 +10625,6 @@ GameObject:
   - component: {fileID: 2606192527695501269}
   - component: {fileID: 7872318521523879776}
   - component: {fileID: 1625163091612106691}
-  - component: {fileID: 3314972250658868388}
   m_Layer: 13
   m_Name: DeathFeedback
   m_TagString: Untagged
@@ -10732,7 +10662,6 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 7872318521523879776}
   - {fileID: 1625163091612106691}
-  - {fileID: 3314972250658868388}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -10857,54 +10786,6 @@ MonoBehaviour:
   RandomParticleSystems: []
   MoveToPosition: 0
   ActivateOnPlay: 0
---- !u!114 &3314972250658868388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278138783316840189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdfe4b9b079619143a9748eeee75e698, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Particles Instantiation
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 0
-    CooldownDuration: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  Mode: 0
-  CachedRecycle: 1
-  ParticlesPrefab: {fileID: 0}
-  RandomParticlePrefabs: []
-  ForceSetActiveOnPlay: 0
-  PositionMode: 0
-  InstantiateParticlesPosition: {fileID: 0}
-  TargetWorldPosition: {x: 0, y: 0, z: 0}
-  Offset: {x: 0, y: 0, z: 0}
-  NestParticles: 1
-  ApplyRotation: 0
-  ApplyScale: 0
 --- !u!1 &293426325824734777
 GameObject:
   m_ObjectHideFlags: 0

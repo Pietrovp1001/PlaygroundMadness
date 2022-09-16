@@ -12,14 +12,6 @@ public class Colectable : MonoBehaviour
 
     public static int coinsCollected = 0;
     public MMFeedbacks PickedMMFeedbacks;
-
-    void Update()
-    {
-        if (LevelManager.Instance.Players[0].GetComponent<Health>().CurrentHealth == 0)
-        {
-            RestartCoins();
-        }
-    }
     
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {

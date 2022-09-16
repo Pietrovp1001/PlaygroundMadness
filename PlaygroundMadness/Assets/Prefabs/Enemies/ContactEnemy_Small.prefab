@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4067358023085436}
   - component: {fileID: 212797044214329334}
   - component: {fileID: 95175321394988512}
+  - component: {fileID: 425251558}
   m_Layer: 13
   m_Name: LegoModel
   m_TagString: Untagged
@@ -97,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1089166889239254}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: d7409d88ace7ca245b60e0240311dba4, type: 2}
+  m_Controller: {fileID: 9100000, guid: cc342475331178943bac9ca2f73684a0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,6 +108,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &425251558
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089166889239254}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.14237677, y: 0.48022154}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.65625, y: 0.96875}
+    newSize: {x: 0.24, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.36282286, y: 0.9604431}
+  m_EdgeRadius: 0
 --- !u!1 &1561694053617324
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,9 +160,9 @@ GameObject:
   - component: {fileID: 114113908976523258}
   - component: {fileID: 114103483350062584}
   - component: {fileID: 114778105809703722}
-  - component: {fileID: 4567244542058936734}
+  - component: {fileID: 3144287143330591665}
   m_Layer: 13
-  m_Name: FreeMov_ContactLego
+  m_Name: ContactEnemy_Small
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,7 +177,7 @@ Transform:
   m_GameObject: {fileID: 1561694053617324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 54.01, y: -21.51, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4398990619741280}
@@ -194,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.27225113, y: 0.93573165}
+  m_Offset: {x: -0.28738666, y: 0.9667718}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -205,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51951027, y: 1.603209}
+  m_Size: {x: 0.76250076, y: 1.9460815}
   m_EdgeRadius: 0
 --- !u!210 &210462174901479078
 SortingGroup:
@@ -334,7 +361,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  Movement: 4
+  Movement: 0
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
@@ -343,7 +370,7 @@ MonoBehaviour:
   IdleThreshold: 0.05
   Acceleration: 10
   Deceleration: 10
-  InterpolateMovementSpeed: 0
+  InterpolateMovementSpeed: 1
   WalkParticles:
   - {fileID: 198793333605707126}
   TouchTheGroundParticles: []
@@ -355,7 +382,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561694053617324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d103439fc2940e347937487a70ea01e3, type: 3}
   m_Name: 
@@ -378,7 +405,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561694053617324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed8c17a9a9fed854daff1f08f315ad69, type: 3}
   m_Name: 
@@ -407,18 +434,18 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 20
-  MaximumHealth: 20
+  InitialHealth: 15
+  MaximumHealth: 15
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 3547864438223399480}
   FeedbackIsProportionalToDamage: 0
   PreventTakeSelfDamage: 0
-  ImmuneToKnockback: 0
+  ImmuneToKnockback: 1
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1
-  DestroyOnDeath: 0
-  DelayBeforeDestruction: 0
+  DestroyOnDeath: 1
+  DelayBeforeDestruction: 0.2
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -568,10 +595,10 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 10
+  MinDamageCaused: 5
+  MaxDamageCaused: 5
   TypedDamages: []
-  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackType: 2
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 500, y: 500, z: 0}
   InvincibilityDuration: 1
@@ -581,7 +608,7 @@ MonoBehaviour:
   DamageOverTimeInterruptible: 1
   RepeatedDamageType: {fileID: 0}
   DamageTakenEveryTime: 0
-  DamageTakenDamageable: 5
+  DamageTakenDamageable: 0
   DamageTakenNonDamageable: 0
   DamageTakenKnockbackType: 0
   DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
@@ -800,7 +827,7 @@ MonoBehaviour:
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
   HideBarAtZeroDelay: 0
---- !u!114 &4567244542058936734
+--- !u!114 &3144287143330591665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -809,80 +836,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1561694053617324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9bf1ac07f3659498e89157301c9746, type: 3}
+  m_Script: {fileID: 11500000, guid: 7366980171602ef4f8347a77b21adf4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LootMode: 0
-  GameObjectToLoot: {fileID: 8263376455190689405, guid: d7d669211753fce4d8db37bd59be449f,
-    type: 3}
-  LootTable:
-    ObjectsToLoot: []
-    WeightsTotal: 0
-  LootTableSO: {fileID: 0}
-  SpawnLootOnDeath: 1
-  SpawnLootOnDamage: 0
-  PoolLoot: 0
-  PoolSize: 20
-  MutualizedPoolName: 
-  CanSpawn: 1
-  Delay: 0
-  Quantity: {x: 0, y: 1}
-  SpawnProperties:
-    Shape: 0
-    NormalToSpawnPlane: {x: 0, y: 1, z: 0}
-    MinimumSphereRadius: 1
-    MaximumSphereRadius: 2
-    MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
-    MaximumCubeBaseSize: {x: 2, y: 2, z: 2}
-    MinimumNormalAxisOffset: 0
-    MaximumNormalAxisOffset: 0
-    UseNormalAxisOffsetCurve: 0
-    NormalOffsetCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    NormalOffsetCurveRemapZero: 0
-    NormalOffsetCurveRemapOne: 1
-    InvertNormalOffsetCurve: 0
-    MinimumRotation: {x: 0, y: 0, z: 0}
-    MaximumRotation: {x: 0, y: 0, z: 0}
-    MinimumScale: {x: 1, y: 1, z: 1}
-    MaximumScale: {x: 1, y: 1, z: 1}
-  MaximumQuantity: 100
-  RemainingQuantity: 100
-  AvoidObstacles: 0
-  DimensionMode: 0
-  AvoidObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  AvoidRadius: 0.25
-  MaxAvoidAttempts: 5
-  LootFeedback: {fileID: 0}
-  DrawGizmos: 0
-  GizmosQuantity: 1000
-  GizmosColor: {r: 0.827451, g: 0.827451, b: 0.827451, a: 1}
-  GimosSize: 1
-  SpawnLootButton: 0
+  enemyAnimator: {fileID: 95175321394988512}
 --- !u!1 &1671905898232590
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +866,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671905898232590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.139, y: 0.297, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -0.11, y: 0.383, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4067358023085436}
@@ -5800,7 +5757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770350836431924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.339, y: 0.035, z: 0}
+  m_LocalPosition: {x: -0.345, y: 0.004, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10623,8 +10580,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983054620183870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.251, y: -0.002, z: 0}
-  m_LocalScale: {x: 1.5426, y: 1, z: 2}
+  m_LocalPosition: {x: 0, y: -0.002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4736116768674126}
@@ -10694,7 +10651,6 @@ GameObject:
   - component: {fileID: 2606192527695501269}
   - component: {fileID: 7872318521523879776}
   - component: {fileID: 1625163091612106691}
-  - component: {fileID: 3314972250658868388}
   m_Layer: 13
   m_Name: DeathFeedback
   m_TagString: Untagged
@@ -10732,7 +10688,6 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 7872318521523879776}
   - {fileID: 1625163091612106691}
-  - {fileID: 3314972250658868388}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -10857,54 +10812,6 @@ MonoBehaviour:
   RandomParticleSystems: []
   MoveToPosition: 0
   ActivateOnPlay: 0
---- !u!114 &3314972250658868388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278138783316840189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdfe4b9b079619143a9748eeee75e698, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Particles Instantiation
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 0
-    CooldownDuration: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  Mode: 0
-  CachedRecycle: 1
-  ParticlesPrefab: {fileID: 0}
-  RandomParticlePrefabs: []
-  ForceSetActiveOnPlay: 0
-  PositionMode: 0
-  InstantiateParticlesPosition: {fileID: 0}
-  TargetWorldPosition: {x: 0, y: 0, z: 0}
-  Offset: {x: 0, y: 0, z: 0}
-  NestParticles: 1
-  ApplyRotation: 0
-  ApplyScale: 0
 --- !u!1 &293426325824734777
 GameObject:
   m_ObjectHideFlags: 0
