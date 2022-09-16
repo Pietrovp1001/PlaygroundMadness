@@ -826,7 +826,7 @@ MonoBehaviour:
   Channel: 0
   FlashColor: {r: 0.68235296, g: 0.03137255, b: 0.03137255, a: 0.7372549}
   FlashDuration: 0.2
-  FlashAlpha: 1
+  FlashAlpha: 0.2
   FlashID: 0
 --- !u!114 &4556634583110766284
 MonoBehaviour:
@@ -16532,7 +16532,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  Movement: 4
+  Movement: 0
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0

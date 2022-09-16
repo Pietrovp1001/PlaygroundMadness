@@ -5103,7 +5103,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 2
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 3
+  TimeBetweenUses: 2
   TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
   BurstLength: 3
@@ -5124,9 +5124,9 @@ MonoBehaviour:
   WeaponUseTransform: {fileID: 0}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
-  ModifyMovementWhileAttacking: 1
+  ModifyMovementWhileAttacking: 0
   MovementMultiplier: 0
-  PreventAllMovementWhileInUse: 1
+  PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
   RecoilForce: 0
   Animators: []
