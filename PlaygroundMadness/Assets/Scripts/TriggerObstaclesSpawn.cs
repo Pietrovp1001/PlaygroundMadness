@@ -6,12 +6,13 @@ public class TriggerObstaclesSpawn : MonoBehaviour
 {
  
     public ObstacleSpawner Spawner;
-    public bool used = false;
+    private bool used = false;
     
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player")) {
-            if (used == false) {
+            if (used == false)
+            {
                 RoomCounter rooms = col.GetComponent<RoomCounter>();
                 if (rooms.roomCount > 0) Spawner.SpawnObstacle();
                 used = true;
