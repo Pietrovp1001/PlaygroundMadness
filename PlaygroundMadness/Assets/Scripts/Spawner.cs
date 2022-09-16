@@ -15,6 +15,8 @@ public class Spawner : MonoBehaviour
     public List<GameObject> doors = new List<GameObject>();
     public RoomCounter roomCounter;
     public GameObject bossPortal;
+    private Animator cajitas;
+    
     
     
     //public int roomCount = LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount;
@@ -26,6 +28,7 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
+        cajitas = GetComponent<Animator>();
         for (int i = 0; i < doors.Count; i++)
         {
             doors[i].SetActive(false);
@@ -68,6 +71,7 @@ public class Spawner : MonoBehaviour
             {
                 for (int i = 0; i < doors.Count; i++)
                 {
+                    cajitas.SetTrigger("upcaj");
                     doors[i].SetActive(false);
                     if (LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount == 10)
                     {

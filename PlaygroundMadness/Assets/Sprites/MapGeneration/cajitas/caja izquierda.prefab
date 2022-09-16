@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1657669077846517500}
   - component: {fileID: 1260394117839347562}
   - component: {fileID: 898064178737685074}
+  - component: {fileID: -1914290932651632676}
   m_Layer: 8
   m_Name: caja izquierda
   m_TagString: Untagged
@@ -111,3 +112,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.3, y: 18.76}
   m_EdgeRadius: 0
+--- !u!95 &-1914290932651632676
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245704673806383915}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2a8b02f18013ee439d1ffceaf4eddb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
