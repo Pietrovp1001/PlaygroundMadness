@@ -4961,6 +4961,7 @@ GameObject:
   - component: {fileID: 467072173}
   - component: {fileID: 467072190}
   - component: {fileID: -9077191464650249665}
+  - component: {fileID: -2200946406105841031}
   m_Layer: 13
   m_Name: FreeMov_ShooterLego
   m_TagString: Enemy
@@ -5457,7 +5458,7 @@ MonoBehaviour:
   HealthBarType: 1
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
-  Size: {x: 1.5, y: 0.4}
+  Size: {x: 0, y: 0}
   BackgroundPadding: {x: 0.05, y: 0.05}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
@@ -5706,7 +5707,89 @@ MonoBehaviour:
   MutualizedPoolName: 
   CanSpawn: 1
   Delay: 0
-  Quantity: {x: 0, y: 1}
+  Quantity: {x: 1, y: 4}
+  SpawnProperties:
+    Shape: 0
+    NormalToSpawnPlane: {x: 0, y: 1, z: 0}
+    MinimumSphereRadius: 1
+    MaximumSphereRadius: 2
+    MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
+    MaximumCubeBaseSize: {x: 2, y: 2, z: 2}
+    MinimumNormalAxisOffset: 0
+    MaximumNormalAxisOffset: 0
+    UseNormalAxisOffsetCurve: 0
+    NormalOffsetCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    NormalOffsetCurveRemapZero: 0
+    NormalOffsetCurveRemapOne: 1
+    InvertNormalOffsetCurve: 0
+    MinimumRotation: {x: 0, y: 0, z: 0}
+    MaximumRotation: {x: 0, y: 0, z: 0}
+    MinimumScale: {x: 1, y: 1, z: 1}
+    MaximumScale: {x: 1, y: 1, z: 1}
+  MaximumQuantity: 999
+  RemainingQuantity: 100
+  AvoidObstacles: 0
+  DimensionMode: 0
+  AvoidObstaclesLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  AvoidRadius: 0.25
+  MaxAvoidAttempts: 5
+  LootFeedback: {fileID: 0}
+  DrawGizmos: 0
+  GizmosQuantity: 1000
+  GizmosColor: {r: 0.827451, g: 0.827451, b: 0.827451, a: 1}
+  GimosSize: 1
+  SpawnLootButton: 0
+--- !u!114 &-2200946406105841031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2325596686016990461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9bf1ac07f3659498e89157301c9746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LootMode: 0
+  GameObjectToLoot: {fileID: 0}
+  LootTable:
+    ObjectsToLoot: []
+    WeightsTotal: 0
+  LootTableSO: {fileID: 0}
+  SpawnLootOnDeath: 1
+  SpawnLootOnDamage: 0
+  PoolLoot: 0
+  PoolSize: 20
+  MutualizedPoolName: 
+  CanSpawn: 1
+  Delay: 0
+  Quantity: {x: 1, y: 1}
   SpawnProperties:
     Shape: 0
     NormalToSpawnPlane: {x: 0, y: 1, z: 0}
