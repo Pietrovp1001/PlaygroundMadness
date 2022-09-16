@@ -5283,7 +5283,7 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1
-  DestroyOnDeath: 0
+  DestroyOnDeath: 1
   DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
@@ -5903,7 +5903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2325795772504793783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.128, y: 0.313, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
