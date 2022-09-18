@@ -1390,6 +1390,29 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5515372186990018257, guid: 9aab71f9cb7f0b044849b41ccecacaa0,
+        type: 3}
+      propertyPath: obstaclesToSpawn.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372186990018257, guid: 9aab71f9cb7f0b044849b41ccecacaa0,
+        type: 3}
+      propertyPath: obstaclesToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 8657691594730677121, guid: 8b1cd0a7438398e4194a6d1accd20530,
+        type: 3}
+    - target: {fileID: 5515372186990018257, guid: 9aab71f9cb7f0b044849b41ccecacaa0,
+        type: 3}
+      propertyPath: obstaclesToSpawn.Array.data[4]
+      value: 
+      objectReference: {fileID: 8657691594730677121, guid: 4bf78852f6623f34ab8f68314dbb2239,
+        type: 3}
+    - target: {fileID: 5515372186990018257, guid: 9aab71f9cb7f0b044849b41ccecacaa0,
+        type: 3}
+      propertyPath: obstaclesToSpawn.Array.data[5]
+      value: 
+      objectReference: {fileID: 8657691594730677121, guid: 1518824b59bb9fa4f8aeb00f4600e450,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aab71f9cb7f0b044849b41ccecacaa0, type: 3}
 --- !u!114 &2545293264737381806 stripped
