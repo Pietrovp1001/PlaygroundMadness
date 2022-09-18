@@ -18,12 +18,12 @@ public class Store : MonoBehaviour
     private void Start() {
         randomPos = Random.Range(0, guns.Count);
         Instantiate(guns[randomPos], itemPositions[0].transform.position, Quaternion.identity);
-
-        randomPos = Random.Range(0, lifes.Count);
-        Instantiate(lifes[randomPos], itemPositions[1].transform.position, Quaternion.identity);
-
+        
         randomPos = Random.Range(0, powerups.Count);
-        Instantiate(powerups[randomPos], itemPositions[2].transform.position, Quaternion.identity);
+        Instantiate(powerups[randomPos], itemPositions[1].transform.position, Quaternion.identity);
+        
+        randomPos = Random.Range(0, lifes.Count);
+        Instantiate(lifes[randomPos], itemPositions[2].transform.position, Quaternion.identity);
     }
     void Update() {
         /*if(player collides guns[]) { //si player entra en contacto con el item

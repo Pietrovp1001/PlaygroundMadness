@@ -6,16 +6,17 @@ public class StoreBuyableItem : MonoBehaviour
 {
     //public int actualCoins;
     public int price;
-    
-    private BoxCollider2D michael;
+    public AudioClip buySound;
+    private CircleCollider2D michael;
 
     private void Start() {
-        michael = gameObject.GetComponent<BoxCollider2D>();
+        michael = gameObject.GetComponent<CircleCollider2D>();
     }
     public void OnCollisionEnter2D(Collision2D col) {
         if (col.gameObject.CompareTag("Player") && Colectable.coinsCollected >= price) {
             michael.enabled = !michael.enabled;
             Colectable.coinsCollected -= price;
+            AudioSource.PlayClipAtPoint(buySound, transform.position);
         }
     }
 }

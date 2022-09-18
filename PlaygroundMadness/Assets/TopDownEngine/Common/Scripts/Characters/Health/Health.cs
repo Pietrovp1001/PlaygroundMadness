@@ -182,7 +182,7 @@ namespace MoreMountains.TopDownEngine
 		protected CharacterMovement _characterMovement;
 		protected TopDownController _controller;
 		
-		protected MMHealthBar _healthBar;
+		public MMHealthBar _healthBar;
 		protected Collider2D _collider2D;
 		protected Collider _collider3D;
 		protected CharacterController _characterController;
@@ -192,7 +192,7 @@ namespace MoreMountains.TopDownEngine
 		protected int _initialLayer;
 		protected MaterialPropertyBlock _propertyBlock;
 		protected bool _hasColorProperty = false;
-
+		
 		protected class InterruptiblesDamageOverTimeCoroutine
 		{
 			public Coroutine DamageOverTimeCoroutine;
@@ -946,6 +946,28 @@ namespace MoreMountains.TopDownEngine
 						if (GUIManager.HasInstance)
 						{
 							GUIManager.Instance.UpdateHealthBar(CurrentHealth, 0f, MaximumHealth, _character.PlayerID);
+						}
+					}
+				}    
+			}
+		}
+		public virtual void UpdateBossHealthBar(bool show)
+		{
+			if (_healthBar != null)
+			{
+				_healthBar.UpdateBar(CurrentHealth, 0f, MaximumHealth, show);
+			}
+
+			if (MasterHealth == null)
+			{
+				if (_character != null)
+				{
+					if (_character.CharacterType == Character.CharacterTypes.Player)
+					{
+						// We update the health bar
+						if (GUIManager.HasInstance)
+						{
+							GUIManager.Instance.UpdateBossHealthBar(CurrentHealth, 0f, MaximumHealth);
 						}
 					}
 				}    

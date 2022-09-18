@@ -21,12 +21,17 @@ namespace MoreMountains.TopDownEngine
 		[Tooltip("if this is true, GoToLevel will ignore the LevelManager and do a direct call")]
 		public bool DoNotUseLevelManager = false;
 		
-		//call Colectable.cs here
-		
 		
 		/// <summary>
 		/// Loads the level specified in the inspector
 		/// </summary>
+		public void MainMenu()
+		{
+			LoadScene(LevelName);
+			Destroy(LevelManager.Instance.Players[0].gameObject);
+			//Destroy(GameManager.Instance.gameObject);
+		}
+		
 		public virtual void GoToLevel()
 		{
 			LoadScene(LevelName);

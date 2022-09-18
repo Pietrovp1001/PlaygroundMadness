@@ -465,6 +465,7 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
+  _healthBar: {fileID: 0}
 --- !u!114 &114675271368606418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,11 +854,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9bf1ac07f3659498e89157301c9746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LootMode: 0
+  LootMode: 1
   GameObjectToLoot: {fileID: 8263376455190689405, guid: d7d669211753fce4d8db37bd59be449f,
     type: 3}
   LootTable:
-    ObjectsToLoot: []
+    ObjectsToLoot:
+    - Loot: {fileID: 8263376455190689405, guid: d7d669211753fce4d8db37bd59be449f,
+        type: 3}
+      Weight: 50
+      ChancePercentage: 0
+    - Loot: {fileID: 4280993820853815665, guid: a2455542e69181b459028a22c90e4103,
+        type: 3}
+      Weight: 20
+      ChancePercentage: 0
     WeightsTotal: 0
   LootTableSO: {fileID: 0}
   SpawnLootOnDeath: 1

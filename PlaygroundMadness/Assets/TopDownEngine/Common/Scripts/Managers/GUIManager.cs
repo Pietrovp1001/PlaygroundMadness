@@ -21,6 +21,10 @@ namespace MoreMountains.TopDownEngine
 		/// the health bars to update
 		[Tooltip("the health bars to update")]
 		public MMProgressBar[] HealthBars;
+			
+		[Tooltip("the health bar of the boss to update")]
+		public MMProgressBar bossHealthBar;
+		
 		/// the dash bars to update
 		[Tooltip("the dash bars to update")]
 		public MMRadialProgressBar[] DashBars;
@@ -278,6 +282,17 @@ namespace MoreMountains.TopDownEngine
 				}
 			}
 
+		}
+		/// <summary>
+		/// Updates the boss health bar.
+		/// </summary>
+		/// <param name="currentHealth">Current health.</param>
+		/// <param name="minHealth">Minimum health.</param>
+		/// <param name="maxHealth">Max health.</param>
+		public virtual void UpdateBossHealthBar (float currentHealth,float minHealth,float maxHealth) 
+		{
+			if (bossHealthBar == null) return;
+			bossHealthBar.UpdateBar(currentHealth, minHealth, maxHealth);
 		}
 
 		/// <summary>
