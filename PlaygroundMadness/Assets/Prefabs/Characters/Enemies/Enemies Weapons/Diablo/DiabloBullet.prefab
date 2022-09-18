@@ -5281,19 +5281,7 @@ MonoBehaviour:
   TriggerFilter: 195
   MinDamageCaused: 5
   MaxDamageCaused: 5
-  TypedDamages:
-  - AssociatedDamageType: {fileID: 11400000, guid: 34cb252e231d5bf46b20591e9e9b63f7,
-      type: 2}
-    MinDamageCaused: 10
-    MaxDamageCaused: 10
-    ForceCharacterCondition: 0
-    ForcedCondition: 0
-    DisableGravity: 0
-    ResetControllerForces: 0
-    ForcedConditionDuration: 0
-    ApplyMovementMultiplier: 0
-    MovementMultiplier: 0.5
-    MovementMultiplierDuration: 2
+  TypedDamages: []
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 3
   DamageCausedKnockbackForce: {x: 400, y: 0, z: 0}

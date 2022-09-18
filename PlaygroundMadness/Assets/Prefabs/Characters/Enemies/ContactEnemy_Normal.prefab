@@ -465,6 +465,7 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
+  _healthBar: {fileID: 0}
 --- !u!114 &114675271368606418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,9 +600,9 @@ MonoBehaviour:
   MinDamageCaused: 5
   MaxDamageCaused: 5
   TypedDamages: []
-  DamageCausedKnockbackType: 2
-  DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 500, y: 500, z: 0}
+  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackDirection: 2
+  DamageCausedKnockbackForce: {x: 600, y: 600, z: 0}
   InvincibilityDuration: 2
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3

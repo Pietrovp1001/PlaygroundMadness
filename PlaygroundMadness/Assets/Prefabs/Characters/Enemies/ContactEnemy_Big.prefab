@@ -442,9 +442,9 @@ MonoBehaviour:
   DamageMMFeedbacks: {fileID: 3547864438223399480}
   FeedbackIsProportionalToDamage: 0
   PreventTakeSelfDamage: 0
-  ImmuneToKnockback: 1
+  ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
-  KnockbackForceMultiplier: 1
+  KnockbackForceMultiplier: 500
   DestroyOnDeath: 1
   DelayBeforeDestruction: 0.2
   PointsWhenDestroyed: 0
@@ -600,10 +600,10 @@ MonoBehaviour:
   MinDamageCaused: 10
   MaxDamageCaused: 10
   TypedDamages: []
-  DamageCausedKnockbackType: 2
-  DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 500, y: 500, z: 0}
-  InvincibilityDuration: 2
+  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackDirection: 2
+  DamageCausedKnockbackForce: {x: 600, y: 600, z: 0}
+  InvincibilityDuration: 1.6
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
