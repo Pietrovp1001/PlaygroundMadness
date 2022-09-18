@@ -545,7 +545,7 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   Channel: 0
-  Duration: 0.8
+  Duration: 0.65
   ResetShakerValuesAfterShake: 1
   ResetTargetValuesAfterShake: 1
   RelativeIntensity: 0
@@ -684,7 +684,7 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   Channel: 0
-  FlashColor: {r: 1, g: 0.9606119, b: 0, a: 1}
+  FlashColor: {r: 1, g: 0.9606119, b: 0, a: 0.5882353}
   FlashDuration: 0.1
   FlashAlpha: 0.3
   FlashID: 0
@@ -813,7 +813,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 665dcf18550f16f4eab039e2302f0d5f, type: 3}
+  Sfx: {fileID: 0}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0

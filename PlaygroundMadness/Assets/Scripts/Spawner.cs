@@ -71,8 +71,7 @@ public class Spawner : MonoBehaviour
             {
                 for (int i = 0; i < doors.Count; i++)
                 {
-                    //cajitas.SetTrigger("upcaj");
-                    doors[i].SetActive(false);
+                    StartCoroutine(CajasAnim());
                     if (LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount == 10)
                     {
                         bossPortal.SetActive(true);
@@ -81,6 +80,19 @@ public class Spawner : MonoBehaviour
             }
         }
     }
-
+    IEnumerator CajasAnim()
+    {
+        for (int i = 0; i < doors.Count; i++)
+        {
+            doors[i].GetComponent<Animator>().SetBool("UpCajita", true);
+        }
+        yield return new WaitForSeconds(2);
+        for (int i = 0; i < doors.Count; i++)
+        {
+            doors[i].SetActive(false);
+        }
+    }
+    
+    
 }
 
