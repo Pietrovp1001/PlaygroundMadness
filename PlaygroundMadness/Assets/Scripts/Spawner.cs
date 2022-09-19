@@ -86,7 +86,7 @@ public class Spawner : MonoBehaviour
         {
             doors[i].GetComponent<Animator>().SetBool("UpCajita", true);
         }
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.9f);
         for (int i = 0; i < doors.Count; i++)
         {
             doors[i].SetActive(false);
