@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Model: {fileID: 0}
+  Model: {fileID: 1089166889239254}
   CurrentHealth: 0
   Invulnerable: 0
   InitialHealth: 15
@@ -446,11 +446,11 @@ MonoBehaviour:
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 2.5
   DestroyOnDeath: 1
-  DelayBeforeDestruction: 0.2
+  DelayBeforeDestruction: 2
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
-  DisableModelOnDeath: 1
+  DisableModelOnDeath: 0
   DisableCollisionsOnDeath: 1
   DisableChildCollisionsOnDeath: 0
   ChangeLayerOnDeath: 0
