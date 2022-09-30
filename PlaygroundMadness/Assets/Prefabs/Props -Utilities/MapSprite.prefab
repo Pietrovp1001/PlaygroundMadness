@@ -2327,70 +2327,80 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 712311464426365075, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 712311464426365075, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -18.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.size
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 2744632890365369813, guid: 43af0c6af37e0724bb935d58cd586d52,
+      objectReference: {fileID: 6190461295541252075, guid: 20caf4d951772104383a16b568d75d7f,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[1]
       value: 
-      objectReference: {fileID: 3947839293937020879, guid: 080460a3b65ea2c4f8710725461da215,
+      objectReference: {fileID: 6686108420700956440, guid: 3447f63d841de65408bdb4abbaacdcc8,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[2]
       value: 
-      objectReference: {fileID: 8804115591060640681, guid: 2aea9ff5a6587f24aa42db9a328cbc6c,
+      objectReference: {fileID: 3756450597649545797, guid: 12bf949a98c29414db4234edf1575428,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[3]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: 8b1cd0a7438398e4194a6d1accd20530,
+      objectReference: {fileID: 4576184760998675135, guid: 6c603905d1ddcc14aaa7f1ca1f2d9a56,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[4]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: e3d09e4c2f91aca4496195e7ef1c9573,
+      objectReference: {fileID: 7851830194654759664, guid: 8e8d56eb2a5cb7c45ae3518d9f960fbf,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[5]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: 215e0e53f771ba64d9a6824bd25b8eaa,
+      objectReference: {fileID: 1803059705239584987, guid: b6ab3bbf5d9334d40b372fcc05a54d24,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[6]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: 215e0e53f771ba64d9a6824bd25b8eaa,
+      objectReference: {fileID: 8804115591060640681, guid: 2aea9ff5a6587f24aa42db9a328cbc6c,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[7]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: 215e0e53f771ba64d9a6824bd25b8eaa,
+      objectReference: {fileID: 4243073555006210485, guid: 75cda3990ad0e57438bc1e5a543a5bb4,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[8]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: 215e0e53f771ba64d9a6824bd25b8eaa,
+      objectReference: {fileID: 4089946436056378507, guid: 65bf1a3f3f60cc44caec1c6ce1c444af,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: obstaclesToSpawn.Array.data[9]
       value: 
-      objectReference: {fileID: 8657691594730677121, guid: 215e0e53f771ba64d9a6824bd25b8eaa,
+      objectReference: {fileID: 8303534467540398539, guid: 8a9cd7df6aceaeb45ad2f940e5acef20,
         type: 3}
     - target: {fileID: 2545293264737381806, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
@@ -2445,6 +2455,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5986803107700281789, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -45.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986803107700281789, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6422535453614835037, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2452,13 +2472,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6639255393552906658, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
-      propertyPath: bossPortal
-      value: 
-      objectReference: {fileID: 5420477723365408639}
-    - target: {fileID: 6639255393552906658, guid: 90932978221c08a4ebd06dc5fedab6c4,
-        type: 3}
       propertyPath: enemiesToSpawn.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6639255393552906658, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
@@ -2482,13 +2497,13 @@ PrefabInstance:
         type: 3}
       propertyPath: enemiesToSpawn.Array.data[3]
       value: 
-      objectReference: {fileID: 1561694053617324, guid: 3d094f2f04e9726429441582a8866578,
+      objectReference: {fileID: 2325596686016990461, guid: c35b68131b404b04f9237ca350de08fa,
         type: 3}
     - target: {fileID: 6639255393552906658, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
       propertyPath: enemiesToSpawn.Array.data[4]
       value: 
-      objectReference: {fileID: 1561694053617324, guid: 5aaf8a72eb9fad646a172c982ed33bda,
+      objectReference: {fileID: 2325596686016990461, guid: d921c9b22aec0e34ca977275a09bfd20,
         type: 3}
     - target: {fileID: 6639255393552906658, guid: 90932978221c08a4ebd06dc5fedab6c4,
         type: 3}
@@ -2569,17 +2584,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8925395281479542772, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8925395281479542772, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029977698620904247, guid: 90932978221c08a4ebd06dc5fedab6c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90932978221c08a4ebd06dc5fedab6c4, type: 3}
 --- !u!1 &3806233566927537756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 197030670298589716, guid: 90932978221c08a4ebd06dc5fedab6c4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3920817896567303240}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5420477723365408639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9029977698620904247, guid: 90932978221c08a4ebd06dc5fedab6c4,
     type: 3}
   m_PrefabInstance: {fileID: 3920817896567303240}
   m_PrefabAsset: {fileID: 0}
