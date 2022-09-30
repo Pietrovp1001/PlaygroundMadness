@@ -3823,7 +3823,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 29
+    OrthographicSize: 35
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -4939,7 +4939,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 27.2
+    OrthographicSize: 35
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -5218,7 +5218,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 19.5
+    OrthographicSize: 35
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -5716,7 +5716,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 31
+    OrthographicSize: 35
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -6110,7 +6110,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 27.2
+    OrthographicSize: 35
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -6832,7 +6832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861161669365811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.7094, y: -52.5752, z: 398.94006}
+  m_LocalPosition: {x: 37.5094, y: -107.2752, z: 398.94006}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6915,7 +6915,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 27.2
+  orthographic size: 35
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -17553,8 +17553,7 @@ MonoBehaviour:
   - {fileID: 3525932925171023174}
   - {fileID: 8369646072172173199}
   - {fileID: 1079626527495044228}
-  doors:
-  - {fileID: 0}
+  doors: []
   roomCounter: {fileID: 0}
   bossPortal: {fileID: 875529637973803756}
   enemyCount: 0
