@@ -27,5 +27,4 @@ public class Colectable : MonoBehaviour
     {
         coinsCollected = 0;
     }
-    
 }
