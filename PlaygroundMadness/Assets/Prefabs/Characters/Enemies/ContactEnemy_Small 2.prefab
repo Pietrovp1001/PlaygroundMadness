@@ -444,7 +444,7 @@ MonoBehaviour:
   PreventTakeSelfDamage: 0
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
-  KnockbackForceMultiplier: 2.5
+  KnockbackForceMultiplier: 1.5
   DestroyOnDeath: 1
   DelayBeforeDestruction: 2
   PointsWhenDestroyed: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   TypedDamages: []
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 2
-  DamageCausedKnockbackForce: {x: 600, y: 600, z: 0}
+  DamageCausedKnockbackForce: {x: 100, y: 100, z: 0}
   InvincibilityDuration: 2
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
@@ -614,7 +614,7 @@ MonoBehaviour:
   DamageTakenNonDamageable: 0
   DamageTakenKnockbackType: 0
   DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
-  DamageTakenInvincibilityDuration: 0.5
+  DamageTakenInvincibilityDuration: 0
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
   HitAnythingFeedback: {fileID: 0}
