@@ -222,7 +222,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.6076495, b: 0, a: 1}
+      minColor: {r: 0.0047169924, g: 0.061855007, b: 1, a: 1}
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
@@ -4840,8 +4840,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b6fc11d534b7e049a8267efd5722496, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4b7706b2440014245adcbc8cb4960de4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9781,8 +9780,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b6fc11d534b7e049a8267efd5722496, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4b7706b2440014245adcbc8cb4960de4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9850,7 +9848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4265232611515830
 Transform:
   m_ObjectHideFlags: 0
@@ -14764,7 +14762,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7d1caebaae67e0f468df88077a39e8e5, type: 2}
-  - {fileID: 2100000, guid: d4cd643376433c14a89d978020e035ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14829,7 +14826,7 @@ GameObject:
   - component: {fileID: 114164106778908234}
   - component: {fileID: 114904966379098586}
   m_Layer: 0
-  m_Name: KoalaGun
+  m_Name: Nerfgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14845,10 +14842,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.01, y: -0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4413649970228748}
   - {fileID: 7335674410523117976}
+  - {fileID: 4420183221269334632}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14869,10 +14867,10 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 0.6
   TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
-  BurstLength: 3
+  BurstLength: 5
   BurstTimeBetweenShots: 0.1
   MagazineBased: 0
   MagazineSize: 10
@@ -14883,18 +14881,18 @@ MonoBehaviour:
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 0
-  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
+  WeaponAttachmentOffset: {x: -1.2, y: 0, z: 0}
   FlipWeaponOnCharacterFlip: 1
   RightFacingFlipValue: {x: 1, y: 1, z: 1}
   LeftFacingFlipValue: {x: -1, y: 1, z: 1}
   WeaponUseTransform: {fileID: 0}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
-  ModifyMovementWhileAttacking: 1
+  ModifyMovementWhileAttacking: 0
   MovementMultiplier: 0.5
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
-  RecoilForce: 500
+  RecoilForce: 0
   Animators:
   - {fileID: 95598217650214546}
   PerformAnimatorSanityChecks: 0
@@ -14923,12 +14921,13 @@ MonoBehaviour:
   ProjectileSpawnOffset: {x: 1.91, y: 0.1, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectilesPerShot: 1
-  SpawnTransforms: []
+  SpawnTransforms:
+  - {fileID: 4420183221269334632}
   SpawnTransformsMode: 1
   Spread: {x: 0, y: 0, z: 10}
   RotateWeaponOnSpread: 1
-  RandomSpread: 1
-  SpawnPosition: {x: 55.223595, y: -30.547655, z: 0}
+  RandomSpread: 0
+  SpawnPosition: {x: 0.59599996, y: -0.892, z: -0.011946945}
   SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &114349044915979940
@@ -14946,7 +14945,7 @@ MonoBehaviour:
   MutualizeWaitingPools: 1
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 1579859513670320, guid: eea0f4966d999fa408fcfaa6b22f1b33,
+  GameObjectToPool: {fileID: 1486318089921324, guid: 3fba675270423bd4cbf2ffe13e2b2f7a,
     type: 3}
   PoolSize: 20
   PoolCanExpand: 1
@@ -19841,7 +19840,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19918,7 +19916,7 @@ Transform:
   m_GameObject: {fileID: 1704763429390570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.11, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4268955331232852}
@@ -19933,7 +19931,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704763429390570}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a86a4a9e97cdee146a8ab7d02cdd7985, type: 2}
   m_CullingMode: 0
@@ -19972,7 +19970,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4497178938312952}
   m_Father: {fileID: 4413649970228748}
@@ -20016,10 +20014,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 47421343
-  m_SortingLayer: 4
+  m_SortingLayerID: 961700441
+  m_SortingLayer: 5
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300004, guid: 75df1bb8b302ceb4a9230d70d1b2e97e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41bee957b4461e64da3b96b3461fc162, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20030,6 +20028,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3706562696581300038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4420183221269334632}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4420183221269334632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706562696581300038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.606, y: 0.078, z: -0.011946945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4404346593870928}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9211281547571822360
 GameObject:
   m_ObjectHideFlags: 0
@@ -20331,7 +20360,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.5
-      value: 1
+      value: 0.12565994
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -20350,7 +20379,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Amplitude: 1
+  Amplitude: 0.937
   RelativeIntensity: 0
 --- !u!114 &6134617435371281027
 MonoBehaviour:
@@ -20389,7 +20418,7 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   Channel: 0
-  FlashColor: {r: 1, g: 0.9060749, b: 0, a: 1}
+  FlashColor: {r: 0, g: 0.084820986, b: 1, a: 0.015686275}
   FlashDuration: 0.2
   FlashAlpha: 0.3
   FlashID: 0
@@ -20479,9 +20508,9 @@ MonoBehaviour:
   RepeatUntilStopped: 0
   Channel: 0
   CameraShakeProperties:
-    Duration: 0.1
-    Amplitude: 0.2
-    Frequency: 40
+    Duration: 0.01
+    Amplitude: 0.05
+    Frequency: 15
     AmplitudeX: 0
     AmplitudeY: 0
     AmplitudeZ: 0
