@@ -4856,7 +4856,7 @@ Transform:
   m_GameObject: {fileID: 1486318089921324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.32, y: -0.23, z: 0}
-  m_LocalScale: {x: 10.11, y: 10.11, z: 10.11}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4008208764464900}
@@ -4982,8 +4982,8 @@ MonoBehaviour:
     m_Bits: 8960
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 5
-  MaxDamageCaused: 5
+  MinDamageCaused: 15
+  MaxDamageCaused: 15
   TypedDamages: []
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 3
