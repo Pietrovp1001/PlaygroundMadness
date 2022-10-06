@@ -11,7 +11,7 @@ public class StoreBuyableItem : MonoBehaviour {
     }
     public void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.CompareTag("Player") && Colectable.coinsCollected >= price) {
-            michael.enabled = !michael.enabled;
+            Destroy(michael);
             Colectable.coinsCollected -= price;
             AudioSource.PlayClipAtPoint(buySound, transform.position);
         }

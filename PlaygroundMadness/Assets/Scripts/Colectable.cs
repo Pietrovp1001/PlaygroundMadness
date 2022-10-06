@@ -9,8 +9,8 @@ using UnityEngine.UI;
 
 public class Colectable : MonoBehaviour
 {
-
-    public static int coinsCollected = 0;
+    
+    public static int coinsCollected = 99;
     public MMFeedbacks PickedMMFeedbacks;
     
     private void OnTriggerEnter2D(Collider2D otherCollider)
