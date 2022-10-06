@@ -5,13 +5,13 @@ using UnityEngine;
 public class StoreBuyableItem : MonoBehaviour {
     public int price;
     public AudioClip buySound;
-    private BoxCollider2D michael;
-    private void Start() {
-        michael = gameObject.GetComponent<BoxCollider2D>();
-    }
+    public GameObject storeCollider;
+    public GameObject priceText;
     public void OnTriggerEnter2D(Collider2D col) {
-        if (col.gameObject.CompareTag("Player") && Colectable.coinsCollected >= price) {
-            Destroy(michael);
+        if (col.gameObject.CompareTag("Player") && Colectable.coinsCollected >= price) 
+        {
+            Destroy(priceText);
+            storeCollider.GetComponent<BoxCollider2D>().enabled = false;
             Colectable.coinsCollected -= price;
             AudioSource.PlayClipAtPoint(buySound, transform.position);
         }
