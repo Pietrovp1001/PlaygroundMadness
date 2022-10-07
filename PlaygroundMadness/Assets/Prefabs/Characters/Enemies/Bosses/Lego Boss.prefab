@@ -494,7 +494,8 @@ GameObject:
   - component: {fileID: 3923619235377637847}
   - component: {fileID: 490393378}
   - component: {fileID: 490393358}
-  - component: {fileID: 3797127800385040650}
+  - component: {fileID: 490393381}
+  - component: {fileID: 490393382}
   m_Layer: 13
   m_Name: Lego Boss
   m_TagString: Enemy
@@ -556,7 +557,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005918294, y: 0.9662336}
+  m_Offset: {x: -0.10267475, y: 1.2507472}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -567,7 +568,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8840912, y: 1.4250991}
+  m_Size: {x: 0.75377935, y: 1.3860059}
   m_EdgeRadius: 0
 --- !u!210 &1503195579271228862
 SortingGroup:
@@ -870,6 +871,9 @@ MonoBehaviour:
       - Decision: {fileID: 1703684813234791356}
         TrueState: 
         FalseState: Deciding
+      - Decision: {fileID: 490393382}
+        TrueState: Change Weapon
+        FalseState: 
   - StateName: Moving
     Actions:
       array:
@@ -879,6 +883,16 @@ MonoBehaviour:
       array:
       - Decision: {fileID: 1703684813234791356}
         TrueState: Deciding
+        FalseState: 
+  - StateName: Change Weapon
+    Actions:
+      array:
+      - {fileID: 490393381}
+      - {fileID: 3923619235377637847}
+    Transitions:
+      array:
+      - Decision: {fileID: 1703684813234791356}
+        TrueState: Attacking
         FalseState: 
   TimeInThisState: 0
   Target: {fileID: 0}
@@ -1146,7 +1160,7 @@ MonoBehaviour:
   HitAnythingEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3797127800385040650
+--- !u!114 &490393381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1155,12 +1169,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1600276731134628244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3d0a470b2e1d94aac3bad1a8e75e68, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fadee1fc0d18cc4e88fcfeb4f28cae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NewWeapon: {fileID: 114317679573123918, guid: 86e85f829dfc672488b50d8e78fb2721,
+  InitializationMode: 0
+  Label: 
+  NewWeapon: {fileID: 114317679573123918, guid: 9d2f22f9f9f66404caafd36caeb23ef4,
     type: 3}
-  boss: {fileID: 1600276731134628244}
+--- !u!114 &490393382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600276731134628244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a01f7a39a54b94881d5543847cf71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+  TrueIfHealthIs: 1
+  HealthValue: 50
+  OnlyOnce: 1
 --- !u!1 &1600356794952384478
 GameObject:
   m_ObjectHideFlags: 0

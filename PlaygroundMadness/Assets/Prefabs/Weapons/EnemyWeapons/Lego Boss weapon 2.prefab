@@ -5098,21 +5098,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: Lego Boss
+  WeaponName: LegoBoss
   WeaponCurrentlyActive: 1
   TriggerMode: 1
-  DelayBeforeUse: 0.2
+  DelayBeforeUse: 1
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 0.2
+  TimeBetweenUses: 2
   TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 1
-  BurstLength: 22
-  BurstTimeBetweenShots: 0.1
+  BurstLength: 6
+  BurstTimeBetweenShots: 3.5
   MagazineBased: 0
-  MagazineSize: 30
+  MagazineSize: 6
   AutoReload: 0
   NoInputReload: 0
-  ReloadTime: 2
+  ReloadTime: 3
   AmmoConsumedPerShot: 1
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
@@ -5155,7 +5155,7 @@ MonoBehaviour:
   Flipped: 0
   ProjectileSpawnOffset: {x: 1.85, y: 0.07, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
-  ProjectilesPerShot: 3
+  ProjectilesPerShot: 2
   SpawnTransforms: []
   SpawnTransformsMode: 0
   Spread: {x: 20, y: 5, z: 10}

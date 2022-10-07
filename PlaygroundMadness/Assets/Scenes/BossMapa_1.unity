@@ -706,13 +706,99 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.2507472
       objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].StateName
+      value: Change Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[1].Actions.array.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].Actions.array.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[1].Actions.array.Array.data[2]
+      value: 
+      objectReference: {fileID: 490393364}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].Actions.array.Array.data[0]
+      value: 
+      objectReference: {fileID: 490393381}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].Actions.array.Array.data[1]
+      value: 
+      objectReference: {fileID: 490393361}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[1].Transitions.array.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[2].Transitions.array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].Transitions.array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[1].Transitions.array.Array.data[1].Decision
+      value: 
+      objectReference: {fileID: 490393382}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[2].Transitions.array.Array.data[1].Decision
+      value: 
+      objectReference: {fileID: 490393367}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].Transitions.array.Array.data[0].Decision
+      value: 
+      objectReference: {fileID: 490393367}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[1].Transitions.array.Array.data[1].TrueState
+      value: Change Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[2].Transitions.array.Array.data[1].TrueState
+      value: Deciding
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[3].Transitions.array.Array.data[0].TrueState
+      value: Attacking
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704595211647040536, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: States.Array.data[1].Transitions.array.Array.data[1].FalseState
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3797127800385040650, guid: d1305f4526f61f84ba9b7c5de597a21f,
         type: 3}
       propertyPath: NewWeapon
       value: 
       objectReference: {fileID: 114317679573123918, guid: 9d2f22f9f9f66404caafd36caeb23ef4,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3797127800385040650, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
 --- !u!1 &245656764
 GameObject:
@@ -1636,6 +1722,74 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 214032138}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &490393361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3923619235377637847, guid: d1305f4526f61f84ba9b7c5de597a21f,
+    type: 3}
+  m_PrefabInstance: {fileID: 214032138}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490393357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8135bf55f3495254099bc5daee8423d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &490393364 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1704537558489966662, guid: d1305f4526f61f84ba9b7c5de597a21f,
+    type: 3}
+  m_PrefabInstance: {fileID: 214032138}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490393357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1affdc8ddb97d40b6a8b805c494909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &490393367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1703684813234791356, guid: d1305f4526f61f84ba9b7c5de597a21f,
+    type: 3}
+  m_PrefabInstance: {fileID: 214032138}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490393357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a946a428cb16e1409d657b9041c69be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &490393381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490393357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fadee1fc0d18cc4e88fcfeb4f28cae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationMode: 0
+  Label: 
+  NewWeapon: {fileID: 114317679573123918, guid: 9d2f22f9f9f66404caafd36caeb23ef4,
+    type: 3}
+--- !u!114 &490393382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490393357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a01f7a39a54b94881d5543847cf71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+  TrueIfHealthIs: 1
+  HealthValue: 50
+  OnlyOnce: 1
 --- !u!1 &513287711
 GameObject:
   m_ObjectHideFlags: 0
