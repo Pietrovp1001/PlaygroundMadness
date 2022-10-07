@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 490393358}
   - component: {fileID: 490393381}
   - component: {fileID: 490393382}
+  - component: {fileID: 490393383}
   m_Layer: 13
   m_Name: Lego Boss
   m_TagString: Enemy
@@ -1127,7 +1128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
   MinDamageCaused: 0
@@ -1135,7 +1136,7 @@ MonoBehaviour:
   TypedDamages: []
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 2
-  DamageCausedKnockbackForce: {x: 15, y: 15, z: 0}
+  DamageCausedKnockbackForce: {x: 450, y: 0, z: 0}
   InvincibilityDuration: 0.5
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
@@ -1192,6 +1193,23 @@ MonoBehaviour:
   TrueIfHealthIs: 1
   HealthValue: 50
   OnlyOnce: 1
+--- !u!114 &490393383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600276731134628244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3d0a470b2e1d94aac3bad1a8e75e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1561694053617324, guid: 1170016d5115a4d438d479bb66ac3f85, type: 3}
+  - {fileID: 1561694053617324, guid: 664e2f7c51ece7048842ded8af115f8e, type: 3}
+  - {fileID: 1561694053617324, guid: 3d094f2f04e9726429441582a8866578, type: 3}
+  boss: {fileID: 1600276731134628244}
 --- !u!1 &1600356794952384478
 GameObject:
   m_ObjectHideFlags: 0
