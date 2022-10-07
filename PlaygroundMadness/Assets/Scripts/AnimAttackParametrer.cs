@@ -12,19 +12,10 @@ public class AnimAttackParametrer : MonoBehaviour
     {
         if (otherCollider.CompareTag("Player"))
         {
-            enemyAnimator.SetBool("isAttacking", true);
+            enemyAnimator.SetTrigger("isAttacking");
             Debug.Log("Player is in range");
         }
-    }
+    
 
-    private void OnTriggerExit2D(Collider2D otherCollider2D)
-    {
-        
-        if (otherCollider2D.CompareTag("Player"))
-        {
-            enemyAnimator.SetBool("isAttacking", false);
-            Debug.Log("Player is out of range");
-        }
-
-    }
+}
 }
