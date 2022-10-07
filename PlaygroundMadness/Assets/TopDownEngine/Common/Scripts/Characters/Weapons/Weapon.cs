@@ -1108,5 +1108,10 @@ namespace MoreMountains.TopDownEngine
 				MMAnimatorExtensions.UpdateAnimatorBool(animator, _comboInProgressAnimationParameter, _comboWeapon.ComboInProgress, list, PerformAnimatorSanityChecks);
 			}
 		}
+
+		public void ApplyDamageMultiplier(float damageMultiplier)
+		{
+			throw new System.NotImplementedException();
+		}
 	}
 }

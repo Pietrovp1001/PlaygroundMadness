@@ -9,15 +9,14 @@ public class RoomWinCounter : MonoBehaviour
 {
     //public RoomCounter Room;
     private Text _text;
-
-    private void Awake()
-    {
-        _text = GetComponent<Text>();
-    }
-
+    public Slider slider;
+    
+    
+    
     private void Update()
     {
-        _text.text = LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount.ToString();
+        slider.value = LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount;
     }
+    
 }
 

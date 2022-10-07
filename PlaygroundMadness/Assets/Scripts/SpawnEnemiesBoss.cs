@@ -12,7 +12,7 @@ public class SpawnEnemiesBoss : MonoBehaviour
     public GameObject boss;
     private void Update()
     {
-        if (boss.GetComponent<Health>().CurrentHealth <= 90)
+        if (boss.GetComponent<Health>().CurrentHealth <= 50)
         {
            SpawnEnemies();
            enemies.Clear();

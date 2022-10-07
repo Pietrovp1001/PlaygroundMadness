@@ -346,5 +346,10 @@ namespace MoreMountains.TopDownEngine
 				_health.OnDeath -= OnDeath;
 			}			
 		}
+
+		public void SetDamage(int damageMultiplier)
+		{
+			throw new NotImplementedException();
+		}
 	}	
 }
