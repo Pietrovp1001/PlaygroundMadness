@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 2752550137320611771}
   m_Layer: 10
   m_Name: Teduard model
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16467,7 +16467,7 @@ MonoBehaviour:
   CharacterDimension: 0
   CharacterType: 0
   PlayerID: Player1
-  CharacterAnimator: {fileID: 0}
+  CharacterAnimator: {fileID: 2752550137320611771}
   UseDefaultMecanim: 1
   RunAnimatorSanityChecks: 0
   DisableAnimatorLogs: 1
@@ -16830,7 +16830,7 @@ MonoBehaviour:
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4376276790352035905}
   FeedbackIsProportionalToDamage: 1
-  PreventTakeSelfDamage: 1
+  PreventTakeSelfDamage: 0
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 15

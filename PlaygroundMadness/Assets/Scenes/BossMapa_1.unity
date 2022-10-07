@@ -706,6 +706,12 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.2507472
       objectReference: {fileID: 0}
+    - target: {fileID: 3797127800385040650, guid: d1305f4526f61f84ba9b7c5de597a21f,
+        type: 3}
+      propertyPath: NewWeapon
+      value: 
+      objectReference: {fileID: 114317679573123918, guid: 9d2f22f9f9f66404caafd36caeb23ef4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
 --- !u!1 &245656764
@@ -3647,7 +3653,7 @@ GameObject:
   - component: {fileID: 914041330}
   m_Layer: 8
   m_Name: Col.01
-  m_TagString: Untagged
+  m_TagString: LevelBounds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5691,7 +5697,7 @@ GameObject:
   - component: {fileID: 1515412925}
   m_Layer: 8
   m_Name: Col.03
-  m_TagString: Untagged
+  m_TagString: LevelBounds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5855,7 +5861,7 @@ GameObject:
   - component: {fileID: 1643947131}
   m_Layer: 8
   m_Name: Col.02
-  m_TagString: Untagged
+  m_TagString: LevelBounds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6093,7 +6099,7 @@ GameObject:
   - component: {fileID: 1718661982}
   m_Layer: 8
   m_Name: Col
-  m_TagString: Untagged
+  m_TagString: LevelBounds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

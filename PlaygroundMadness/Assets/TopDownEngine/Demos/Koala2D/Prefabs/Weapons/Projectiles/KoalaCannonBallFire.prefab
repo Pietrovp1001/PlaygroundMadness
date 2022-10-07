@@ -5099,6 +5099,7 @@ GameObject:
   - component: {fileID: 4885324820606386938}
   - component: {fileID: 4792092806996848024}
   - component: {fileID: 4821737260569321886}
+  - component: {fileID: 6913741848052174408}
   m_Layer: 18
   m_Name: KoalaCannonBallFire
   m_TagString: Untagged
@@ -5213,7 +5214,7 @@ MonoBehaviour:
   ChangeLayerOnDeath: 0
   ChangeLayersRecursivelyOnDeath: 0
   LayerOnDeath:
-    _layerIndex: 18
+    _layerIndex: 0
   DeathMMFeedbacks: {fileID: 6743573975964700507}
   ResetColorOnRevive: 1
   ColorMaterialPropertyName: _Color
@@ -5334,6 +5335,20 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6913741848052174408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4781971205581445142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fdb181b19cdd740ae279205b265761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  explosion: {fileID: 0}
 --- !u!1 &5393939310842682806
 GameObject:
   m_ObjectHideFlags: 0

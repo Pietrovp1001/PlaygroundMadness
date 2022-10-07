@@ -16,6 +16,7 @@ public class BossSwitchWeapon : MonoBehaviour
         if (boss.GetComponent<Health>().CurrentHealth <= 50)
         {
             ChangeWeapon();
+            
         }
     }
 
