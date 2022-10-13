@@ -14,8 +14,6 @@ public class BossDefeated : MonoBehaviour
         if (boss.GetComponent<Health>().CurrentHealth == 0)
         {
             portal.SetActive(true);
-            particles.Play();
-            Destroy(particles, 1f);
         }
     }
  
