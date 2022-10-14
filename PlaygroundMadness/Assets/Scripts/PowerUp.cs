@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class PowerUp : MonoBehaviour
 {
 
-    public int healthUpgrade= 0;
-    public int speedUpgrade = 0;
+    public float healthUpgrade= 0;
+    public float speedUpgrade = 0;
 
-    public void OnTriggerEnter2D(Collider2D col)
+    /*public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -19,14 +19,17 @@ public class PowerUp : MonoBehaviour
          SpeedUpgrade();
         }
     }
-
-    private void HealthUpgrade()
+*/
+    
+    
+    
+    public void HealthUpgrade()
     {
         LevelManager.Instance.Players[0].GetComponent<Health>().MaximumHealth+=healthUpgrade;
         LevelManager.Instance.Players[0].GetComponent<Health>().ResetHealthToMaxHealth();
     }
     
-    private void SpeedUpgrade()
+    public void SpeedUpgrade()
     {
         LevelManager.Instance.Players[0].GetComponent<CharacterMovement>().WalkSpeed = speedUpgrade + LevelManager.Instance.Players[0].GetComponent<CharacterMovement>().WalkSpeed;
         LevelManager.Instance.Players[0].GetComponent<CharacterMovement>().ResetSpeed();
