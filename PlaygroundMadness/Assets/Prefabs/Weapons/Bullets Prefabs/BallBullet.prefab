@@ -4903,8 +4903,8 @@ MonoBehaviour:
   Model: {fileID: 1880451140553914}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 1
-  MaximumHealth: 1
+  InitialHealth: 3
+  MaximumHealth: 3
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 0}
@@ -5065,7 +5065,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 0.6
+  LifeTime: 5
   FaceDirection: 0
   FaceMovement: 0
   MovementVector: 0
