@@ -452,11 +452,11 @@ MonoBehaviour:
   DisableControllerOnDeath: 1
   DisableModelOnDeath: 0
   DisableCollisionsOnDeath: 1
-  DisableChildCollisionsOnDeath: 0
+  DisableChildCollisionsOnDeath: 1
   ChangeLayerOnDeath: 0
   ChangeLayersRecursivelyOnDeath: 0
   LayerOnDeath:
-    _layerIndex: 0
+    _layerIndex: 4
   DeathMMFeedbacks: {fileID: 2606192527695501269}
   ResetColorOnRevive: 1
   ColorMaterialPropertyName: _Color

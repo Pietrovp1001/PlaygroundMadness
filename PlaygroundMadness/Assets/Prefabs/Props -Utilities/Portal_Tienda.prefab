@@ -4951,7 +4951,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6822513631925061825}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.020594, y: -8.189274, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
@@ -5003,7 +5003,7 @@ MonoBehaviour:
   RequiresPlayerType: 1
   RequiresButtonActivationAbility: 0
   Activable: 1
-  AutoActivation: 1
+  AutoActivation: 0
   AutoActivationDelay: 0
   AutoActivationDelayResetsOnExit: 1
   CanOnlyActivateIfGrounded: 0
@@ -5013,7 +5013,7 @@ MonoBehaviour:
   MaxNumberOfActivations: 0
   DelayBetweenUses: 0
   DisableAfterUse: 0
-  InputType: 0
+  InputType: 2
   InputButton: Interact
   InputKey: 32
   AnimationTriggerParameterName: 

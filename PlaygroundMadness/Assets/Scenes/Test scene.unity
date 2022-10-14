@@ -331,72 +331,6 @@ MonoBehaviour:
     ProgressBarSpeed: 5
     FadeMode: 0
     UnloadMethod: 2
---- !u!1 &171304629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8699743295837022009, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 8371532408877588981}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &171304636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171304629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 007ea1391362e4845aee91886eb0cda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  OnCollisionEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCollisionExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCollisionStayEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  TriggerLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  OnTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTriggerExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTriggerStayEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  Collision2DLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  OnCollision2DEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCollision2DExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCollision2DStayEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  Trigger2DLayerMask:
-    serializedVersion: 2
-    m_Bits: 1025
-  OnTrigger2DEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTrigger2DExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTrigger2DStayEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &175976091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,16 +1984,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Portal_Tienda
-      objectReference: {fileID: 0}
-    - target: {fileID: 6863180392119381833, guid: 07f2b85e083ab35448c648979a7aae10,
-        type: 3}
-      propertyPath: InputType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6863180392119381833, guid: 07f2b85e083ab35448c648979a7aae10,
-        type: 3}
-      propertyPath: AutoActivation
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07f2b85e083ab35448c648979a7aae10, type: 3}

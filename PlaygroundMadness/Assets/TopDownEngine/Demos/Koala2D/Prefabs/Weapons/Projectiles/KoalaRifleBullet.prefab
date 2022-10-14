@@ -4858,7 +4858,7 @@ Transform:
   m_GameObject: {fileID: 1486318089921324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.32, y: -0.23, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.02, y: 3.06, z: 2.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4008208764464900}
@@ -5064,8 +5064,8 @@ MonoBehaviour:
     m_Bits: 8960
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 5
-  MaxDamageCaused: 5
+  MinDamageCaused: 4
+  MaxDamageCaused: 4
   TypedDamages: []
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 3
@@ -5154,8 +5154,8 @@ Transform:
   m_GameObject: {fileID: 1493663112626144}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.32, y: 2.32, z: 2.32}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4755177917266352}
   m_RootOrder: 1
@@ -10016,8 +10016,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6585f21f352bd2d428e39c0353cdc7ae, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 3f6b0a334e5a4b44cab8e9afcdf6899a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19737,7 +19736,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2b93188a6f7a3824ebbe3e81e9795f24, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24715,7 +24713,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24889,7 +24886,8 @@ MonoBehaviour:
   DebugActive: 0
   Mode: 0
   BoundParticleSystem: {fileID: 198859694235400266}
-  RandomParticleSystems: []
+  RandomParticleSystems:
+  - {fileID: 198859694235400266}
   MoveToPosition: 0
   ActivateOnPlay: 0
 --- !u!114 &5119666614909312334
@@ -25064,7 +25062,8 @@ MonoBehaviour:
   DebugActive: 0
   Mode: 0
   BoundParticleSystem: {fileID: 198859694235400266}
-  RandomParticleSystems: []
+  RandomParticleSystems:
+  - {fileID: 198859694235400266}
   MoveToPosition: 0
   ActivateOnPlay: 0
 --- !u!114 &8119169296999711834
