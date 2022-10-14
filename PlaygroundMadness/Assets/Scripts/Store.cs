@@ -12,15 +12,14 @@ public class Store : MonoBehaviour
     public List<GameObject> itemPositions = new List<GameObject>();
     public GameObject[] existingItems = new GameObject[3];
     public List<int> prices = new List<int>();
-    
-    
+
     private int randomPos;
 
     private void Start() {
         GenerateItems();
         GetItems();
     }
-    void Update() {
+    private void Update() {
         BuyableCheck();
     }
     private void GenerateItems() {
@@ -36,16 +35,16 @@ public class Store : MonoBehaviour
     private void GetItems() {
         existingItems = GameObject.FindGameObjectsWithTag("Pickable");
     }
-    private void BuyableCheck() {
+    public void BuyableCheck() {
         for (int i = 0; i < itemPositions.Count; i++) {
             if (Colectable.coinsCollected < prices[i]) {
-                if (existingItems[i].GetComponent<BoxCollider2D>().enabled) {
-                    existingItems[i].GetComponent<BoxCollider2D>().enabled = !existingItems[i].GetComponent<BoxCollider2D>().enabled;
+                if (existingItems[i].GetComponent<BoxCollider2D>().enabled == true) {
+                    existingItems[i].GetComponent<BoxCollider2D>().enabled = false;
                 }
             }
             if (Colectable.coinsCollected >= prices[i]) {
-                if (!existingItems[i].GetComponent<BoxCollider2D>().enabled) {
-                    existingItems[i].GetComponent<BoxCollider2D>().enabled = !existingItems[i].GetComponent<BoxCollider2D>().enabled;
+                if (existingItems[i].GetComponent<BoxCollider2D>().enabled == false) {
+                    existingItems[i].GetComponent<BoxCollider2D>().enabled = true;
                 }
             }
         }
