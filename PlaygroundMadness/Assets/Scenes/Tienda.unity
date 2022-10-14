@@ -769,7 +769,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.513382, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1308,19 +1308,19 @@ PrefabInstance:
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
       propertyPath: guns.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
       propertyPath: guns.Array.data[0]
       value: 
-      objectReference: {fileID: 1135282862314296, guid: 0f644bc7e56d81640bd14006273bf200,
+      objectReference: {fileID: 5558552333951713440, guid: d8b5158eb0660f14ebb4900329d11226,
         type: 3}
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
       propertyPath: guns.Array.data[1]
       value: 
-      objectReference: {fileID: 1135282862314296, guid: d8b5158eb0660f14ebb4900329d11226,
+      objectReference: {fileID: 5109970816273276482, guid: 87cbc2093497a2d4b8efedbf17f63022,
         type: 3}
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
@@ -1331,19 +1331,19 @@ PrefabInstance:
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
       propertyPath: powerups.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
       propertyPath: powerups.Array.data[0]
       value: 
-      objectReference: {fileID: 2900251730349763431, guid: 27cbc6de1f206c241ace1e02fe07d738,
+      objectReference: {fileID: 6190043385015224033, guid: ae227a5c2356e904a91d52d216ad5652,
         type: 3}
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
       propertyPath: powerups.Array.data[1]
       value: 
-      objectReference: {fileID: 5972586284924781204, guid: ae227a5c2356e904a91d52d216ad5652,
+      objectReference: {fileID: 6190043385015224033, guid: c3d3248398fe32b4f82bf1e2caf2af09,
         type: 3}
     - target: {fileID: 1156943342482295757, guid: 42f550ecdc3dc594187cab8cfc8bbd54,
         type: 3}
@@ -1711,7 +1711,7 @@ PrefabInstance:
     - target: {fileID: 7021130506818671682, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -38.9971
+      value: -38.99707
       objectReference: {fileID: 0}
     - target: {fileID: 7091658787288126330, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
