@@ -15,14 +15,14 @@ public class ClickyButton : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
     {
         imgg.sprite = pressedd;
         sourcee.PlayOneShot(compressClip);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         imgg.sprite = defaultt;
         sourcee.PlayOneShot(uncompressClip);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
     
 }
