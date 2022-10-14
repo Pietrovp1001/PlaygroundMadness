@@ -104,6 +104,7 @@ namespace MoreMountains.TopDownEngine
 		public virtual void OnTriggerEnter2D (Collider2D collider) 
 		{
 			_collidingObject = collider.gameObject;
+			Debug.Log(_collidingObject);
 			PickItem (collider.gameObject);
 		}
 

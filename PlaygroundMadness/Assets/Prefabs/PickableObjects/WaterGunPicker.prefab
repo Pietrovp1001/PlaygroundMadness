@@ -188,7 +188,6 @@ GameObject:
   - component: {fileID: 5560067377617167400}
   - component: {fileID: 5619318035648327720}
   - component: {fileID: 5619318035648327721}
-  - component: {fileID: 5619318035648327722}
   m_Layer: 0
   m_Name: WaterGunPicker
   m_TagString: Pickable
@@ -330,19 +329,6 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5619318035648327722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5558552333951713440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d9644fa270c3974f9ac5dceef597a11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 0}
 --- !u!1 &5558642654408845700
 GameObject:
   m_ObjectHideFlags: 0
