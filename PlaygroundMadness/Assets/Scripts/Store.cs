@@ -17,10 +17,9 @@ public class Store : MonoBehaviour
 
     private void Start() {
         GenerateItems();
-        GetItems();
     }
     private void Update() {
-        BuyableCheck();
+        
     }
     private void GenerateItems() {
         randomPos = Random.Range(0, guns.Count);
@@ -32,10 +31,7 @@ public class Store : MonoBehaviour
         randomPos = Random.Range(0, lifes.Count);
         Instantiate(lifes[randomPos], itemPositions[2].transform.position, Quaternion.identity);
     }
-    private void GetItems() {
-        existingItems = GameObject.FindGameObjectsWithTag("Pickable");
-    }
-    public void BuyableCheck() {
+   /* public void BuyableCheck() {
         for (int i = 0; i < itemPositions.Count; i++) {
             if (Colectable.coinsCollected < prices[i]) {
                 if (existingItems[i].GetComponent<BoxCollider2D>().enabled == true) {
@@ -48,5 +44,5 @@ public class Store : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 }
