@@ -10,8 +10,8 @@ public class Store : MonoBehaviour
     public List<GameObject> powerups = new List<GameObject>();
 
     public List<GameObject> itemPositions = new List<GameObject>();
-    public GameObject[] existingItems = new GameObject[3];
-    public List<int> prices = new List<int>();
+    //public GameObject[] existingItems = new GameObject[3];
+    //public List<int> prices = new List<int>();
 
     private int randomPos;
 

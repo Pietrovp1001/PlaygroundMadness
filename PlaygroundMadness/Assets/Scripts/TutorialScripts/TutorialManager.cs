@@ -36,6 +36,7 @@ public class TutorialManager : MonoBehaviour
             door.SetActive(false);
         }
     }
+    /**/
     private void OnTriggerExit2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player")) {
             moveCollider.enabled = !moveCollider.enabled;
