@@ -262,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &245656765
 Camera:
   m_ObjectHideFlags: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.4846625, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1310,7 +1310,7 @@ PrefabInstance:
     - target: {fileID: 7021130506818671682, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -38.99707
+      value: -38.997086
       objectReference: {fileID: 0}
     - target: {fileID: 7091658787288126330, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
@@ -7712,11 +7712,6 @@ MonoBehaviour:
   - {fileID: 1156943342214544601}
   - {fileID: 1156943342204159341}
   - {fileID: 1156943343312901243}
-  existingItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  prices: 4b0000003200000019000000
 --- !u!4 &1156943344111006133
 Transform:
   m_ObjectHideFlags: 0
