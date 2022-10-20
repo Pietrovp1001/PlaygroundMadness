@@ -22,7 +22,7 @@ public class TutorialWall : MonoBehaviour
         for (int i = 0; i < boxes.Count; i++) {
             boxes[i].GetComponent<Animator>().SetBool("UpCajita", true);
         }
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.5f);
         for (int i = 0; i < boxes.Count; i++) {
             boxes[i].SetActive(false);
         }
