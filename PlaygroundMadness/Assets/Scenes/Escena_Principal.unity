@@ -9538,9 +9538,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 598334956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e0dd662ec452f4783e5b35769d2067, type: 3}
+  m_Script: {fileID: 11500000, guid: 76a8d557ccf956748bdf6bfee594d69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalSkinCoinsEarned: 0
 --- !u!1 &601378151
 GameObject:
   m_ObjectHideFlags: 3
@@ -11995,7 +11996,7 @@ PrefabInstance:
     - target: {fileID: 6820519949545489285, guid: 07f2b85e083ab35448c648979a7aae10,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6820519949545489285, guid: 07f2b85e083ab35448c648979a7aae10,
         type: 3}
@@ -30623,6 +30624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -38.99707
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021130506818671682, guid: 0c86eda56011f6f4ba9e3335d627a80a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.998047
       objectReference: {fileID: 0}
     - target: {fileID: 7021660088870448030, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
