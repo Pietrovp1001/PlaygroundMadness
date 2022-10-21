@@ -4887,7 +4887,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 5
+  LifeTime: 8
 --- !u!114 &114266039652667574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5065,11 +5065,11 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 5
+  LifeTime: 8
   FaceDirection: 0
   FaceMovement: 0
   MovementVector: 0
-  Speed: 1000
+  Speed: 1200
   Acceleration: 0
   Direction: {x: -1, y: 0, z: 0}
   DirectionCanBeChangedBySpawner: 1
@@ -5077,11 +5077,11 @@ MonoBehaviour:
   ProjectileIsFacingRight: 0
   InitialInvulnerabilityDuration: 0
   DamageOwner: 0
-  BounceRaycastLength: 2
+  BounceRaycastLength: 3
   BounceLayers:
     serializedVersion: 2
-    m_Bits: 256
-  BounceFeedback: {fileID: 0}
+    m_Bits: 8448
+  BounceFeedback: {fileID: 8338939277010736459}
   AmountOfBounces: {x: 5, y: 9}
   SpeedModifier: {x: 0.9, y: 0.9}
 --- !u!1 &1493663112626144
@@ -24730,7 +24730,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6501732552575051032}
   - component: {fileID: 8338939277010736459}
-  - component: {fileID: 5596794079722643079}
   - component: {fileID: 5119666614909312334}
   m_Layer: 18
   m_Name: HitNonDamageableFeedback
@@ -24767,7 +24766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Feedbacks:
-  - {fileID: 5596794079722643079}
   - {fileID: 5119666614909312334}
   InitializationMode: 2
   SafeMode: 3
@@ -24805,48 +24803,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
---- !u!114 &5596794079722643079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4308704757458502305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c27131831afa28b499cb120fc9059997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Particles
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 0
-    CooldownDuration: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  Mode: 0
-  BoundParticleSystem: {fileID: 198859694235400266}
-  RandomParticleSystems:
-  - {fileID: 198859694235400266}
-  MoveToPosition: 0
-  ActivateOnPlay: 0
 --- !u!114 &5119666614909312334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24883,14 +24839,14 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 84a9746d4ee81e841b689a625e33c590, type: 3}
+  Sfx: {fileID: 8300000, guid: 68a1fd11cd69e29478644c5e04712eb5, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 1
-  MaxVolume: 1
+  MinVolume: 0.6
+  MaxVolume: 0.6
   MinPitch: 1
   MaxPitch: 1
   SfxAudioMixerGroup: {fileID: 0}
@@ -25059,14 +25015,14 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 84a9746d4ee81e841b689a625e33c590, type: 3}
+  Sfx: {fileID: 8300000, guid: 68a1fd11cd69e29478644c5e04712eb5, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 1
-  MaxVolume: 1
+  MinVolume: 0.6
+  MaxVolume: 0.6
   MinPitch: 1
   MaxPitch: 1
   SfxAudioMixerGroup: {fileID: 0}

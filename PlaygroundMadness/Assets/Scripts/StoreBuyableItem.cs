@@ -14,16 +14,18 @@ public class StoreBuyableItem : MonoBehaviour {
     public GameObject item;
     public PowerUp powerUp;
     public float giveHealth;
-    
+    public Weapon weaponToGive;
+    public string weaponID;
     
     public void BuyItem()
     {
         if (Colectable.coinsCollected >= price)
         {
             Colectable.coinsCollected -= price;
-            itemPicker.Pick();
             buyFeedback.PlayFeedbacks();
+            LevelManager.Instance.Players[0].GetComponent<CharacterHandleWeapon>().ChangeWeapon(weaponToGive, weaponID);
             Destroy(item);
+            
         }
     }
     public void BuySpeedPowerUp()

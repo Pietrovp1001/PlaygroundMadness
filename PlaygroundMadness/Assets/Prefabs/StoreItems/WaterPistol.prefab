@@ -115,8 +115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 234826607577174169}
   - component: {fileID: 144471436726546613}
-  - component: {fileID: 144471436726546615}
-  - component: {fileID: 144471436726546612}
   - component: {fileID: 144471436726546619}
   m_Layer: 0
   m_Name: Model
@@ -161,44 +159,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &144471436726546615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239820684742959235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86fd837a0abc28d4d91c55590bd2c090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 92a089e882e447442953a73df5c47ad9, type: 2}
-  Quantity: 1
-  RemainingQuantity: 1
-  PickableIfInventoryIsFull: 0
-  DisableObjectWhenDepleted: 0
---- !u!114 &144471436726546612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239820684742959235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1feff4042ae759c49a290443b9bfdd71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickedMMFeedbacks: {fileID: 0}
-  DisableColliderOnPick: 0
-  DisableObjectOnPick: 1
-  DisableDelay: 0
-  DisableModelOnPick: 0
-  DisableTargetObjectOnPick: 0
-  TargetObjectToDisable: {fileID: 0}
-  TargetObjectDisableDelay: 1
-  Model: {fileID: 0}
 --- !u!114 &144471436726546619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,11 +172,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 75
-  itemPicker: {fileID: 144471436726546615}
+  itemPicker: {fileID: 0}
   buyFeedback: {fileID: 3859107556594090847}
   item: {fileID: 240484198477424489}
   powerUp: {fileID: 0}
   giveHealth: 0
+  weaponToGive: {fileID: 114552424271636822, guid: 7339c8b4cc480324dacfa5310cf78300,
+    type: 3}
+  weaponID: Waterpistol
 --- !u!1 &240084054375456665
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +253,7 @@ SpriteRenderer:
   m_SortingLayerID: 1603220759
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5aef9a00cea9d144085406090c460a0d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18c8ffec62b1cf240806606666dcc241, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -313,7 +276,7 @@ GameObject:
   - component: {fileID: 256279685611689953}
   - component: {fileID: 256279685611689952}
   m_Layer: 0
-  m_Name: BallGun Picker
+  m_Name: WaterPistol
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

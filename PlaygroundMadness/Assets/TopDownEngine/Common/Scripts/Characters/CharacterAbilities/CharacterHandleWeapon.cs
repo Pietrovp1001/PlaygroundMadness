@@ -632,5 +632,7 @@ namespace MoreMountains.TopDownEngine
 			base.OnRespawn();
 			Setup();
 		}
+
+		
 	}
 }
