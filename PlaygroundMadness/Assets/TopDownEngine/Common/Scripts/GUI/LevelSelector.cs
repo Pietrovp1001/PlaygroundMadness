@@ -22,6 +22,7 @@ namespace MoreMountains.TopDownEngine
 		public bool DoNotUseLevelManager = false;
 		
 		
+		
 		/// <summary>
 		/// Loads the level specified in the inspector
 		/// </summary>
@@ -75,6 +76,7 @@ namespace MoreMountains.TopDownEngine
 			LoadScene(SceneManager.GetActiveScene().name);
 			Destroy(LevelManager.Instance.Players[0].gameObject);
 			Destroy(GameManager.Instance.gameObject);
+			
 			
 
 		}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using MoreMountains.Feedbacks;
+using MoreMountains.TopDownEngine;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class BuyCharacter : MonoBehaviour
     public MMFeedbacks buyedFeedbacks;
     public MMFeedbacks notBuyedFeedbacks;
     public SpriteRenderer CoinSprite;
+    public Character Skin;
     
     public void BuyCharacter1()
     {
@@ -21,6 +23,8 @@ public class BuyCharacter : MonoBehaviour
             buyedText.text = "Select";
             buyedFeedbacks.PlayFeedbacks();
             Destroy(CoinSprite);
+            LevelManager.Instance.PlayerPrefabs[0] = null;
+            LevelManager.Instance.PlayerPrefabs[0] = Skin; 
         }
         else
         {

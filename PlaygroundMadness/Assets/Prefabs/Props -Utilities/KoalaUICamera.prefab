@@ -2973,7 +2973,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6962871524120429051}
         m_TargetAssemblyTypeName: Colectable, Assembly-CSharp
         m_MethodName: RestartCoins
         m_Mode: 1
@@ -3073,7 +3073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316ab92be1a09414daadf97f5d5d2a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: 
+  LevelName: Escena_Principal
   DoNotUseLevelManager: 0
 --- !u!1 &950081614353910668
 GameObject:
@@ -10888,6 +10888,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8371532409976717789}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6962871524120429051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1480767962267025446, guid: 4bbd45f69ead3a54bb624d7e5aba293d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8371532409976717789}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737ee70f4b8f5d340b459f6bdbb818fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8778975146805146824
 PrefabInstance:
   m_ObjectHideFlags: 0
