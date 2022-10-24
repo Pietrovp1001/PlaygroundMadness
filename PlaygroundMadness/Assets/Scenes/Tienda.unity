@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae4cb8f997d6c744a6172cbaa8cb264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundClip: {fileID: 8300000, guid: bdde16f4acbf206458c2ec6f7dc50509, type: 3}
+  SoundClip: {fileID: 8300000, guid: 9beec5a43c51c3f4e81a7c42c4eaec3a, type: 3}
   Loop: 1
 --- !u!4 &513287713
 Transform:
@@ -830,7 +830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a8d557ccf956748bdf6bfee594d69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalSkinCoinsEarned: 0
 --- !u!114 &690781871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2584,7 +2583,7 @@ MonoBehaviour:
   AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
   HidePromptAfterUse: 0
-  PromptRelativePosition: {x: 0, y: 2.02, z: 0}
+  PromptRelativePosition: {x: 0, y: 10, z: 0}
   PromptRotation: {x: 0, y: 0, z: 0}
   ActivationFeedback: {fileID: 0}
   DeniedFeedback: {fileID: 0}

@@ -5,12 +5,19 @@ using UnityEngine.UI;
 
 public class SkinCoinsCounter : MonoBehaviour
 {
-  public int skinCoinsManager;
+  
   public Text skinCoinsText;
   
-  void Update()
+  private void Awake()
   {
-   FindObjectOfType<SkinCoinsManager>().totalSkinCoinsEarned = skinCoinsManager;
-    skinCoinsText.text = skinCoinsManager.ToString();
+        
+      skinCoinsText = GetComponent<Text>();
   }
-}
+
+  private void Update()
+  {
+        
+      skinCoinsText.text = SkinCoinsManager.totalSkinCoinsEarned.ToString();
+        
+  }
+  }

@@ -626,6 +626,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
+      propertyPath: Quantity.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
+      propertyPath: Quantity.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
+      propertyPath: MaximumQuantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
+      propertyPath: GameObjectToLoot
+      value: 
+      objectReference: {fileID: 1219947905830791472, guid: c39522b378e13524593d32e5501e32c3,
+        type: 3}
     - target: {fileID: 490393382, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
       propertyPath: HealthValue
       value: 75
@@ -1673,7 +1690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae4cb8f997d6c744a6172cbaa8cb264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundClip: {fileID: 8300000, guid: bdde16f4acbf206458c2ec6f7dc50509, type: 3}
+  SoundClip: {fileID: 8300000, guid: 532fb2b66cfc2f149a00c01c32cc11fd, type: 3}
   Loop: 1
 --- !u!4 &513287713
 Transform:
@@ -2525,7 +2542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a8d557ccf956748bdf6bfee594d69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalSkinCoinsEarned: 0
 --- !u!1 &610279894
 GameObject:
   m_ObjectHideFlags: 0

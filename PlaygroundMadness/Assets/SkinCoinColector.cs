@@ -10,7 +10,7 @@ public class SkinCoinColector : MonoBehaviour
     {
         if (otherCollider.tag == "Player")
         {
-            FindObjectOfType<SkinCoinsManager>().totalSkinCoinsEarned += 1;
+            FindObjectOfType<SkinCoinsManager>().CollectCoins();
         }
     }
 }
