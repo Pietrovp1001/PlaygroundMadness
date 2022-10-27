@@ -17450,6 +17450,12 @@ PrefabInstance:
       propertyPath: InitialSpawnPoint
       value: 
       objectReference: {fileID: 8441304961421164823}
+    - target: {fileID: 8721558093287136161, guid: 6e73cd18ec4def04185c71f17e5e498b,
+        type: 3}
+      propertyPath: PlayerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8530085612319544915, guid: 5f2ded0975acf4c46863950c5552ed1d,
+        type: 3}
     - target: {fileID: 8721558093287136163, guid: 6e73cd18ec4def04185c71f17e5e498b,
         type: 3}
       propertyPath: m_Name
