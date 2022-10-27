@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SkinCoinsManager : MonoBehaviour
 {
-    public static int totalSkinCoinsEarned;
+    public static int totalSkinCoinsEarned= 99;
 
     public void CollectCoins()
     {

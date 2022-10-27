@@ -13,22 +13,33 @@ public class BuyCharacter : MonoBehaviour
     public MMFeedbacks buyedFeedbacks;
     public MMFeedbacks notBuyedFeedbacks;
     public SpriteRenderer CoinSprite;
-    public Character Skin;
-    
+    public Character skin;
+    public LevelManager levelManager;
+    public bool buyed = false;
     public void BuyCharacter1()
     {
-        if (SkinCoinsManager.totalSkinCoinsEarned >= skinPrice)
+        if (buyed == false)
         {
-            SkinCoinsManager.totalSkinCoinsEarned -= skinPrice;
-            buyedText.text = "Select";
-            buyedFeedbacks.PlayFeedbacks();
-            Destroy(CoinSprite);
-            LevelManager.Instance.PlayerPrefabs[0] = null;
-            LevelManager.Instance.PlayerPrefabs[0] = Skin; 
+            if (SkinCoinsManager.totalSkinCoinsEarned >= skinPrice)
+            {
+                SkinCoinsManager.totalSkinCoinsEarned -= skinPrice;
+                buyedFeedbacks.PlayFeedbacks();
+                Destroy(CoinSprite);
+                buyed = true;
+                //GameManager.Instance.StoreSelectedCharacter(skin);
+            }
+            else
+            {
+                notBuyedFeedbacks.PlayFeedbacks();
+            }
         }
         else
         {
-            notBuyedFeedbacks.PlayFeedbacks();
+            buyedText.text = "Selected";
+            levelManager.PlayerPrefabs[0] = null;
+            levelManager.PlayerPrefabs[0] = skin;
+            //GameManager.Instance.StoreSelectedCharacter(skin);
         }
+
     }
 }
