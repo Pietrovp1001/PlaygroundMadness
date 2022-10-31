@@ -177,6 +177,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -68.00076
       objectReference: {fileID: 0}
+    - target: {fileID: 918425721240386976, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f1b3c1a573aace4d84885ff3ea93492,
+        type: 3}
     - target: {fileID: 948979981895033764, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -185,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 949252671028712674, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
       propertyPath: m_Name
-      value: KoalaUICamera
+      value: KoalaUICamera Rooms
       objectReference: {fileID: 0}
     - target: {fileID: 953289761105469946, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
@@ -322,12 +328,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.0015029907
       objectReference: {fileID: 0}
-    - target: {fileID: 6242319238965058367, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300002, guid: 358b5d9f23bc9413e87c9948acc67ee1,
-        type: 3}
     - target: {fileID: 6962871524120429049, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
       propertyPath: m_AnchoredPosition.x

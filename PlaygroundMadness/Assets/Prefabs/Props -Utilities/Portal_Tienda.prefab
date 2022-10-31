@@ -4937,6 +4937,7 @@ GameObject:
   - component: {fileID: 6820519949545489285}
   - component: {fileID: 6806016740515018587}
   - component: {fileID: 6863180392119381833}
+  - component: {fileID: 7131036951447656432}
   m_Layer: 0
   m_Name: Portal_Tienda
   m_TagString: Untagged
@@ -5020,8 +5021,8 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114767332097364426, guid: bb1fc0f1f16f31248b9b4d80aa795609,
     type: 3}
-  ButtonPromptText: A
-  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
+  ButtonPromptText: PRESS
+  ButtonPromptColor: {r: 1, g: 1, b: 1, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
@@ -5034,7 +5035,32 @@ MonoBehaviour:
   ExitFeedback: {fileID: 0}
   OnActivation:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6863180392119381833}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.GoToLevelEntryPoint,
+          MoreMountains.TopDownEngine
+        m_MethodName: GoToNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7131036951447656432}
+        m_TargetAssemblyTypeName: ResetRoomCount, Assembly-CSharp
+        m_MethodName: ResetRoomCounter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnExit:
     m_PersistentCalls:
       m_Calls: []
@@ -5045,3 +5071,15 @@ MonoBehaviour:
   UseEntryPoints: 0
   PointOfEntryIndex: 1
   FacingDirection: 0
+--- !u!114 &7131036951447656432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822513631925061825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7787cfc5b23c87a47aba251389de8052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
