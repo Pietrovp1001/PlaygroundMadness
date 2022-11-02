@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class ResetStats : MonoBehaviour
 {
-
     public void ResetRoomCount()
     {
-        LevelManager.Instance.PlayerPrefabs[0].GetComponent<RoomCounter>().roomCount = 0;
+        FindObjectOfType<RoomCounter>().roomCount = 0;
     }
     
 }

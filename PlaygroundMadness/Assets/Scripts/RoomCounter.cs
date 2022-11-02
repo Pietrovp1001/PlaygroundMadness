@@ -9,4 +9,5 @@ public class RoomCounter : MonoBehaviour
 {
     public int roomCount;
     //public Text roomspassed = LevelManager.Instance.Players[0].GetComponent<RoomCounter>().roomCount.ToString();
+    
 }
