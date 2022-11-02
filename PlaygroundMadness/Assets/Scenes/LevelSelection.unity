@@ -1142,6 +1142,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: closebuttonui
       objectReference: {fileID: 0}
+    - target: {fileID: 62048529944404240, guid: 1d992379f9bb89740a18ad5c72a8ea65,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2307784785521692726, guid: 1d992379f9bb89740a18ad5c72a8ea65,
         type: 3}
       propertyPath: m_RootOrder
@@ -6149,6 +6154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: configbuttonui
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009504949447866302, guid: 0b76992efa548db4aa6c1040fe1da46a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b76992efa548db4aa6c1040fe1da46a, type: 3}

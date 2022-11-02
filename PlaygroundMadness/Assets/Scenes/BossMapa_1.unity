@@ -715,12 +715,12 @@ PrefabInstance:
     - target: {fileID: 1704265959245630368, guid: d1305f4526f61f84ba9b7c5de597a21f,
         type: 3}
       propertyPath: InitialHealth
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1704265959245630368, guid: d1305f4526f61f84ba9b7c5de597a21f,
         type: 3}
       propertyPath: MaximumHealth
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
@@ -13187,7 +13187,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  LevelName: Escena_Secundaria
+  LevelName: LevelSelection
   UseEntryPoints: 0
   PointOfEntryIndex: 1
   FacingDirection: 0

@@ -11,4 +11,5 @@ public class SkinCoinsManager : MonoBehaviour
     {
         totalSkinCoinsEarned += 1;
     }
+    
 }

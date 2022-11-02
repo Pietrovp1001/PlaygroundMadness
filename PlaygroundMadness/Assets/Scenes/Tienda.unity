@@ -757,7 +757,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.6666666, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2577,8 +2577,8 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114767332097364426, guid: bb1fc0f1f16f31248b9b4d80aa795609,
     type: 3}
-  ButtonPromptText: A
-  ButtonPromptColor: {r: 0.9882353, g: 0.29620394, b: 0, a: 1}
+  ButtonPromptText: Press
+  ButtonPromptColor: {r: 1, g: 0.8319856, b: 0.759434, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1

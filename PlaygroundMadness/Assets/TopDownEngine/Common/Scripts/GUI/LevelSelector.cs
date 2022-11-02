@@ -30,6 +30,8 @@ namespace MoreMountains.TopDownEngine
 		{
 			LoadScene(LevelName);
 			Destroy(LevelManager.Instance.Players[0].gameObject);
+			
+			
 			//Destroy(GameManager.Instance.gameObject);
 		}
 		
