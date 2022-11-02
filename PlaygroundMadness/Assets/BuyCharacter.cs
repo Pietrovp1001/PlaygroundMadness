@@ -17,7 +17,7 @@ public class BuyCharacter : MonoBehaviour
     public SpriteRenderer CoinSprite;
     public Character skin;
     public LevelManager levelManager;
-    public bool buyed;
+    private bool buyed;
     
     public void BuyCharacter1()
     {

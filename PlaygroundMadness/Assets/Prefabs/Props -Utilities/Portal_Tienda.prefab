@@ -4937,7 +4937,6 @@ GameObject:
   - component: {fileID: 6820519949545489285}
   - component: {fileID: 6806016740515018587}
   - component: {fileID: 6863180392119381833}
-  - component: {fileID: 7131036951447656432}
   m_Layer: 0
   m_Name: Portal_Tienda
   m_TagString: Untagged
@@ -5049,7 +5048,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7131036951447656432}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ResetRoomCount, Assembly-CSharp
         m_MethodName: ResetRoomCounter
         m_Mode: 1
@@ -5071,15 +5070,3 @@ MonoBehaviour:
   UseEntryPoints: 0
   PointOfEntryIndex: 1
   FacingDirection: 0
---- !u!114 &7131036951447656432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6822513631925061825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7787cfc5b23c87a47aba251389de8052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
