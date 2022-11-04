@@ -722,7 +722,7 @@ SpriteRenderer:
   m_Size: {x: 16, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &816217084498377223
@@ -896,22 +896,22 @@ PrefabInstance:
     - target: {fileID: 1563247652675547830, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40
+      value: 38.2
       objectReference: {fileID: 0}
     - target: {fileID: 1563247652675547830, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15
+      value: -13.8
       objectReference: {fileID: 0}
     - target: {fileID: 1828776749545840446, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61
+      value: -55.9
       objectReference: {fileID: 0}
     - target: {fileID: 1828776749545840446, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4643274365779258247, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
@@ -993,17 +993,22 @@ PrefabInstance:
     - target: {fileID: 5004074239602628472, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.8
+      value: 50.8
       objectReference: {fileID: 0}
     - target: {fileID: 5004074239602628472, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712256756844594072, guid: dc6095228fcdba04aac1b32447ef847e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.1
       objectReference: {fileID: 0}
     - target: {fileID: 5712256756844594072, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15
+      value: -10.2
       objectReference: {fileID: 0}
     - target: {fileID: 5883345725840194067, guid: dc6095228fcdba04aac1b32447ef847e,
         type: 3}
