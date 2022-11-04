@@ -1865,7 +1865,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4072,7 +4072,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4859,7 +4859,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5607,6 +5607,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 285435027099313415, guid: 0c86eda56011f6f4ba9e3335d627a80a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 285435027099313415, guid: 0c86eda56011f6f4ba9e3335d627a80a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1060
+      objectReference: {fileID: 0}
     - target: {fileID: 1975785016137702417, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5725,18 +5735,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7021660088870448030, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021660088870448030, guid: 0c86eda56011f6f4ba9e3335d627a80a,
+        type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4728167
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 7021660088870448030, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4728167
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 7021660088870448030, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4728167
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 7021660088870448030, guid: 0c86eda56011f6f4ba9e3335d627a80a,
         type: 3}
@@ -7393,7 +7408,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
