@@ -628,21 +628,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
       propertyPath: Quantity.x
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
       propertyPath: Quantity.y
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
       propertyPath: MaximumQuantity
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 490393378, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
-      propertyPath: GameObjectToLoot
-      value: 
-      objectReference: {fileID: 1219947905830791472, guid: c39522b378e13524593d32e5501e32c3,
-        type: 3}
     - target: {fileID: 490393382, guid: d1305f4526f61f84ba9b7c5de597a21f, type: 3}
       propertyPath: HealthValue
       value: 75
@@ -13187,7 +13182,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  LevelName: LevelSelection
+  LevelName: Escena_Secundaria
   UseEntryPoints: 0
   PointOfEntryIndex: 1
   FacingDirection: 0
