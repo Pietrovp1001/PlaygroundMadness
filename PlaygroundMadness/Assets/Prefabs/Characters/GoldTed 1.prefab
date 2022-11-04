@@ -573,7 +573,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1264832557, guid: bf96640e838438e42a576aefd40ba764, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.969643, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16272,7 +16272,7 @@ GameObject:
   - component: {fileID: 1448461009729648352}
   - component: {fileID: 1061700084417584432}
   m_Layer: 10
-  m_Name: Teduard
+  m_Name: GoldTed 1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16738,7 +16738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Model: {fileID: 3562270453922896024}
-  CurrentHealth: 80
+  CurrentHealth: 0
   Invulnerable: 0
   InitialHealth: 80
   MaximumHealth: 80

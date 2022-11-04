@@ -2772,7 +2772,7 @@ MonoBehaviour:
   skin: {fileID: 8530085612319544915, guid: 5f2ded0975acf4c46863950c5552ed1d, type: 3}
   levelManager: {fileID: 8721558093287136161, guid: 6e73cd18ec4def04185c71f17e5e498b,
     type: 3}
-  buyed: 0
+  purchase: {fileID: 0}
 --- !u!82 &757128068
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3450,7 +3450,7 @@ MonoBehaviour:
   CoinSprite: {fileID: 1192188360}
   skin: {fileID: 0}
   levelManager: {fileID: 0}
-  buyed: 0
+  purchase: {fileID: 0}
 --- !u!114 &878123167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5278,18 +5278,6 @@ MonoBehaviour:
   ButtonPressedFirstTime:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221493955}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1221493961}
         m_TargetAssemblyTypeName: BuyCharacter, Assembly-CSharp
         m_MethodName: BuyCharacter1
@@ -5395,10 +5383,10 @@ MonoBehaviour:
   buyedFeedbacks: {fileID: 2072023535433641842}
   notBuyedFeedbacks: {fileID: 1173292029}
   CoinSprite: {fileID: 1993191433}
-  skin: {fileID: 8530085612319544915, guid: b346c4f9749c7804db9b41227ade74ec, type: 3}
+  skin: {fileID: 8530085612319544915, guid: b8c4a8fd45732e84cb8d79faa3dbcb6e, type: 3}
   levelManager: {fileID: 8721558093287136161, guid: 6e73cd18ec4def04185c71f17e5e498b,
     type: 3}
-  buyed: 0
+  purchase: {fileID: 1221493953}
 --- !u!1 &1232722185
 GameObject:
   m_ObjectHideFlags: 0
@@ -6243,7 +6231,7 @@ MonoBehaviour:
   CoinSprite: {fileID: 271869509}
   skin: {fileID: 0}
   levelManager: {fileID: 0}
-  buyed: 0
+  purchase: {fileID: 0}
 --- !u!114 &1512713807
 MonoBehaviour:
   m_ObjectHideFlags: 0

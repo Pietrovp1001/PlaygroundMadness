@@ -45,4 +45,6 @@ public class BuyCharacter : MonoBehaviour
             //GameManager.Instance.StoreSelectedCharacter(skin);
         }
     }
+    
+    
 }

@@ -17447,6 +17447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8721558093287136161, guid: 6e73cd18ec4def04185c71f17e5e498b,
         type: 3}
+      propertyPath: LoadingSceneName
+      value: StoreLoadingScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721558093287136161, guid: 6e73cd18ec4def04185c71f17e5e498b,
+        type: 3}
       propertyPath: InitialSpawnPoint
       value: 
       objectReference: {fileID: 8441304961421164823}
