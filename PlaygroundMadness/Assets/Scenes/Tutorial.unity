@@ -882,7 +882,6 @@ GameObject:
   - component: {fileID: 147640636}
   - component: {fileID: 147640635}
   - component: {fileID: 147640634}
-  - component: {fileID: 147640633}
   - component: {fileID: 147640641}
   - component: {fileID: 147640640}
   - component: {fileID: 147640639}
@@ -914,18 +913,6 @@ RectTransform:
   m_AnchoredPosition: {x: -973, y: -15}
   m_SizeDelta: {x: 1920, y: 1120}
   m_Pivot: {x: 1, y: 1}
---- !u!114 &147640633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147640631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a986484b2e73b6941a5d920a790cee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!225 &147640634
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -982,9 +969,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 147640633}
-        m_TargetAssemblyTypeName: SkipTutorial, Assembly-CSharp
-        m_MethodName: SkipToMain
+      - m_Target: {fileID: 147640641}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.FinishLevel, MoreMountains.TopDownEngine
+        m_MethodName: TriggerButtonAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2164,7 +2151,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.1213872, y: 1}
+    m_SensorSize: {x: 2.1132438, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4371,7 +4358,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.1213872, y: 1}
+    m_SensorSize: {x: 2.1132438, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5158,7 +5145,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.1213872, y: 1}
+    m_SensorSize: {x: 2.1132438, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7707,7 +7694,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.1213872, y: 1}
+    m_SensorSize: {x: 2.1132438, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
