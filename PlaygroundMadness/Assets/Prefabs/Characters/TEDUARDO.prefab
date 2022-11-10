@@ -782,9 +782,9 @@ MonoBehaviour:
   BoundRenderer: {fileID: 0}
   Mode: 0
   PropertyName: _Tint
-  FlickerDuration: 0.2
+  FlickerDuration: 0.6
   FlickerOctave: 0.04
-  FlickerColor: {r: 1, g: 0.078431375, b: 0.078431375, a: 0.74509805}
+  FlickerColor: {r: 1.7411011, g: 0, b: 0, a: 0.74509805}
   MaterialIndexes: 
   UseMaterialPropertyBlocks: 0
 --- !u!114 &8076939778932306434
@@ -824,7 +824,7 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   Channel: 0
-  FlashColor: {r: 0.68235296, g: 0.03137255, b: 0.03137255, a: 0.7372549}
+  FlashColor: {r: 0.68235296, g: 0.03137255, b: 0.03137255, a: 0.47058824}
   FlashDuration: 0.2
   FlashAlpha: 0.2
   FlashID: 0

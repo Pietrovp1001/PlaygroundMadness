@@ -301,7 +301,7 @@ MonoBehaviour:
   DelayBeforeDeathScreen: 1
   UseLevelBounds: 1
   LoadingSceneMode: 1
-  LoadingSceneName: LoadingScreen
+  LoadingSceneName: "Mu\xF1ecasLoadingScreen"
   AdditiveLoadingSettings:
     LoadingSceneName: MMAdditiveLoadingScreen
     ThreadPriority: 4
@@ -10295,7 +10295,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.502924, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11420,6 +11420,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1024354477794061318, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 1898908224719947409, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
       propertyPath: MaxRange
@@ -11429,6 +11434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832006023054533279, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8371532408387004181, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
