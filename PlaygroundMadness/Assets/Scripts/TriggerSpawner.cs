@@ -18,22 +18,21 @@ public class TriggerSpawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Player") && used == false)
+        if (col.gameObject.CompareTag("Player"))
         {
-            RoomCounter rooms = col.GetComponent<RoomCounter>();
             playerPos.SetActive(true);
-            if (rooms.roomCount > 0)
-            {
-                Spawner.SpawnObject();
-                ObstacleSpawner.SpawnObstacle();
-                used = true;
-                rooms.roomCount++;
-                locked.SetActive(false);
-            }
-            else
-            {
-                rooms.roomCount++;
-                used = true;
+            locked.SetActive(false);
+            if (used == false) {
+                RoomCounter rooms = col.GetComponent<RoomCounter>();
+                if (rooms.roomCount > 0) {
+                    Spawner.SpawnObject();
+                    ObstacleSpawner.SpawnObstacle();
+                    used = true;
+                    rooms.roomCount++;
+                } else {
+                    rooms.roomCount++;
+                    used = true;
+                }
             }
         }
     }
