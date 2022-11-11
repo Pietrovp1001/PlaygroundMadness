@@ -227,7 +227,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 1620791649648f64a94bea874a060e09, type: 3}
+  Sfx: {fileID: 8300000, guid: 4d45b00108d4c0447970228c93523851, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 6a2d070cd429cc049afb7103b3a408a7, type: 3}
+  Sfx: {fileID: 8300000, guid: 478c4149a3e0172438b2b89d89df72ac, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
@@ -1263,6 +1263,7 @@ MonoBehaviour:
   bossHealthBarColor: {r: 0, g: 0.79538155, b: 1, a: 1}
   boss: {fileID: 8536234278474776318}
   vidaNecesariaParaTransformarse: 50
+  bossTransformSound: {fileID: 8300000, guid: a0ba87358a09c78429f5356e0cf2be0d, type: 3}
 --- !u!1 &8536485411396318150
 GameObject:
   m_ObjectHideFlags: 0

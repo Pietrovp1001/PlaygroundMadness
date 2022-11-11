@@ -7139,7 +7139,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.6271676, y: 1}
+    m_SensorSize: {x: 0.877193, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7878,12 +7878,12 @@ PrefabInstance:
     - target: {fileID: 1024250750269789146, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -38.996887
+      value: -38.99695
       objectReference: {fileID: 0}
     - target: {fileID: 1024250750269789146, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -52.997864
+      value: -52.997803
       objectReference: {fileID: 0}
     - target: {fileID: 1024354477794061318, guid: 51ef4fb71ceb3834ba33e86ecef589b7,
         type: 3}
@@ -14963,6 +14963,22 @@ PrefabInstance:
       propertyPath: particles
       value: 
       objectReference: {fileID: 1183858651}
+    - target: {fileID: 6936555991410466888, guid: 136864a1871a3f14b9e4fadc6a814338,
+        type: 3}
+      propertyPath: Quantity.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936555991410466888, guid: 136864a1871a3f14b9e4fadc6a814338,
+        type: 3}
+      propertyPath: Quantity.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936555991410466888, guid: 136864a1871a3f14b9e4fadc6a814338,
+        type: 3}
+      propertyPath: GameObjectToLoot
+      value: 
+      objectReference: {fileID: 8263376455190689405, guid: d7d669211753fce4d8db37bd59be449f,
+        type: 3}
     - target: {fileID: 8530389567692147576, guid: 136864a1871a3f14b9e4fadc6a814338,
         type: 3}
       propertyPath: m_LocalPosition.x
