@@ -15619,8 +15619,8 @@ MonoBehaviour:
   Model: {fileID: 2412362167651435583}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 150
-  MaximumHealth: 150
+  InitialHealth: 200
+  MaximumHealth: 200
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 9032131373206011682}
@@ -16063,7 +16063,7 @@ MonoBehaviour:
   bossHealthBar: {fileID: 1444144292}
   bossHealthBarColor: {r: 0, g: 0.79538155, b: 1, a: 1}
   boss: {fileID: 1600276731197623966}
-  vidaNecesariaParaTransformarse: 50
+  vidaNecesariaParaTransformarse: 100
   bossTransformFeedback: {fileID: 27557281}
 --- !u!4 &4019111860688577060
 Transform:
