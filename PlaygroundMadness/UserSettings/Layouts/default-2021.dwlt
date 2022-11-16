@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 129
+  controlID: 101
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 18
+  controlID: 102
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 19
+  controlID: 103
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -217,13 +217,13 @@ MonoBehaviour:
     height: 560
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -404,23 +404,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4ad60600
-      m_LastClickedID: 448074
-      m_ExpandedIDs: 46a7eaffeaaceaff92adeaffd64eebff14cbebff24cbebff2ccbebff72cbebfff4cbebff14ccebff9eccebff40ceebff42ceebffb2f0ebffdaf1ebff7cf3ebff7ef3ebff428fecff588fecff708fecff7a8fecff5291ecfff292ecfffa92ecff2023eeff1249eeffd682f2ffee82f2ff0683f2ff4e84f2ffc284f2fffe84f2ff1285f2ffb286f2ff3e40f3ff7407f7ff8c07f7ffa407f7ffae07f7ffea07f7ff0e08f7ff2808f7ff3008f7ff4008f7ffb009f7ff500bf7ff580bf7ffecf2f7ff04f3f7ff1cf3f7ff26f3f7ff62f3f7ff86f3f7ffa0f3f7ffa8f3f7ffb8f3f7ff04f4f7ff0ef5f7ff22f5f7ffc4f6f7ffc6f6f7ff7029f8ffb629f8ffc629f8ff2e2bf8ffd02cf8ff322df8ffbc4ff9ffd44ff9ffec4ff9fff64ff9ff3250f9ff7850f9ff8850f9ffd450f9fffa51f9ff9c53f9ffa453f9ffae6cf9ff18f9f9ff6e69fcff8669fcff9e69fcfff66afcff0a6bfcffac6cfcff0e6dfcff168afdff3a8bfdffdc8cfdffe48cfdff94a1fdff18b9fdff8cf2fdffb2f3fdff54f5fdff04f7fdff1a20feffb420feffa25bffffc45bffffde5bffffe65bfffff65bffff145cffff2c5cffff445cffffb85dffff5a5fffff625fffff2265ffffc466ffffcc66ffff746effff966effffa66effff2e6fffff446fffff6a70ffff0c72ffff1472ffffc678ffffba7dffffdc7dffffec7dffffb07fffff5281ffff5a81ffff00d3ffff6ad4ffff0cd6ffff14d6ffffdedaffffcef9ffff9c7700000878000030280100a063010018740100168101009ccf0100b2cf010008d00100fc100200121102006e110200c2590300545f0300908e030002a9030040190400caef05003cf0050074580600d2580600
+      m_SelectedIDs: 14720000
+      m_LastClickedID: 29204
+      m_ExpandedIDs: fafaffffe071000052720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Audio Source
-        m_OriginalName: Audio Source
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1314992
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -562,7 +562,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -678,9 +678,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -28.911816, y: 0.61346287, z: -10.017115}
+    m_Target: {x: -20.776947, y: 1.9630944, z: -0.12697165}
     speed: 2
-    m_Value: {x: -28.911816, y: 0.61346287, z: -10.017115}
+    m_Value: {x: -20.776947, y: 1.9630944, z: -0.12697165}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -731,9 +731,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.835903
+    m_Target: 20.873526
     speed: 2
-    m_Value: 13.835903
+    m_Value: 20.873526
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -969,22 +969,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sprites
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sprites
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\User\Documents\Taller 6\PlaygroundMadness\PlaygroundMadness
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec7d0000
-    m_LastClickedID: 32236
-    m_ExpandedIDs: 00000000607d0000627d0000647d0000f67d00006cb1000052ba0000
+    m_SelectedIDs: 34780000
+    m_LastClickedID: 30772
+    m_ExpandedIDs: 00000000bc770000be770000c0770000c277000032780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1012,7 +1012,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000607d0000627d0000647d0000
+    m_ExpandedIDs: 00000000bc770000be770000c0770000c2770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000066990100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
